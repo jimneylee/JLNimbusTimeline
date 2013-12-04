@@ -13,6 +13,7 @@ Screenshot
 ===============
 
 ![image](https://github.com/jimneylee/NimbusTimeline/blob/master/NimbusTimelineDemo/Screenshot/screenshot.jpg)
+![image](https://github.com/jimneylee/NimbusTimeline/blob/master/NimbusTimelineDemo/Screenshot/screenshot.png)
 
 Try MacBuildServer Install
 ===============
