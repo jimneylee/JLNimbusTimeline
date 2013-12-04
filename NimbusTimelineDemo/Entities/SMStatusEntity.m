@@ -1,15 +1,15 @@
 //
-//  SMWeiboMainbodyEntity.m
-//  SinaMBlog
+//  SMStatusEntity.m
+//  SinaMBlogNimbus
 //
-//  Created by Jiang Yu on 13-1-30.
+//  Created by jimneylee on 13-1-30.
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
 #import "SMStatusEntity.h"
 #import "SMJSONKeys.h"
 #import "NSString+StringValue.h"
-#import "NSDate+SinaMBlog.h"
+#import "NSDate+formatDateFromString.h"
 
 @implementation SMStatusEntity
 
@@ -23,21 +23,9 @@
     self = [super initWithDictionary:dic];
     if (self) {
         self.user = (SMUserInfoEntity *)[SMUserInfoEntity entityWithDictionary:dic[JSON_STATUS_USER]];
-        self.retweeted_status = (SMStatusEntity *)[SMStatusEntity entityWithDictionary:dic[JSON_STATUS_RETWEEDTED_STATUS]];
-        self.created_at = dic[JSON_STATUS_CREATED_AT];
-        self.blogID = [NSString getStringValue:dic[JSON_STATUS_ID]];
-        self.blogMID = [NSString getStringValue:dic[JSON_STATUS_MID]];
-        self.blogIDStr = dic[JSON_STATUS_IDSTR];
         self.text = dic[JSON_STATUS_TEXT];
         self.source = [self getSourceString:dic[JSON_STATUS_SOURCE]];
-        self.favorited = [dic[JSON_STATUS_FAVORITED] boolValue];
-        self.truncated = [dic[JSON_STATUS_TRUNCATED] boolValue];
-        self.thumbnail_pic = dic[JSON_STATUS_THUMBNAIL_PIC];
-        self.bmiddle_pic = dic[JSON_STATUS_BMIDDLE_PIC];
-        self.original_pic = dic[JSON_STATUS_ORIGINAL_PIC];
-        self.reposts_count = [dic[JSON_STATUS_REPOSTS_COUNT] intValue];
-        self.comments_count = [dic[JSON_STATUS_COMMENTS_COUNT] intValue];
-        self.attitudes_count = [dic[JSON_STATUS_ATTITUDES_COUNT] intValue];
+        self.created_at = dic[JSON_STATUS_CREATED_AT];
         self.timestamp = [NSDate formatDateFromString:self.created_at];
     }
     return self;

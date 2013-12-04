@@ -1,8 +1,8 @@
 //
 //  SMBaseEntity.h
-//  SinaMBlog
+//  SinaMBlogNimbus
 //
-//  Created by Jiang Yu on 13-1-31.
+//  Created by jimneylee 13-1-31.
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 

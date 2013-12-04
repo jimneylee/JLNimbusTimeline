@@ -1,20 +1,20 @@
 //
-//  ViewController.m
+//  SMPublicTimlineListC.m
 //  SinaMBlogNimbus
 //
 //  Created by jimneylee on 13-10-30.
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "SMPageTimlineListC.h"
+#import "SMPublicTimlineListC.h"
 #import "SMStatusEntity.h"
 #import "SMPageTimelineModel.h"
 
-@interface SMPageTimlineListC ()
+@interface SMPublicTimlineListC ()
 @property (nonatomic, strong) NIActionBlock tapAction;
 @end
 
-@implementation SMPageTimlineListC
+@implementation SMPublicTimlineListC
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,6 +36,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.tableView.separatorColor = [UIColor clearColor];
+    self.tableView.backgroundColor = TABLE_VIEW_BG_COLOR;
+    self.tableView.backgroundView = nil;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -75,6 +79,27 @@
             return NO;
         }
     };
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)showMessageForEmpty
+{
+    NSString* msg = @"信息为空";
+    [SMGlobalConfig showHUDMessage:msg addedToView:self.view];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)showMessageForError
+{
+    NSString* msg = @"抱歉，无法获取信息，请稍后再试！";
+    [SMGlobalConfig showHUDMessage:msg addedToView:self.view];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)showMssageForLastPage
+{
+    NSString* msg = @"已是最后一页";
+    [SMGlobalConfig showHUDMessage:msg addedToView:self.view];
 }
 
 @end

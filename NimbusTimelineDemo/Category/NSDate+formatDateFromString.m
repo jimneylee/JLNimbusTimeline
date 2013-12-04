@@ -6,11 +6,10 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "NSDate+SinaMBlog.h"
+#import "NSDate+formatDateFromString.h"
 
-@implementation NSDate (SinaMBlog)
+@implementation NSDate (formatDateFromString)
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 + (NSDate *)formatDateFromString:(NSString *)str {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];

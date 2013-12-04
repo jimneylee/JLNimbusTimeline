@@ -15,13 +15,13 @@
     // self
     #import "SMGlobalConfig.h"
     #import "SMJSONKeys.h"
-    #import "UIImage+SNAddtions.h"// todo: change name
 
     // MBProgressHUD
     #import "MBProgressHUD.h"
 
     // three20 category
     #import "UIViewAdditions.h"
+    #import "NSDateAdditions.h"
 
     // nimbus
     #import "NimbusModels.h"
@@ -29,15 +29,5 @@
     #import "NimbusNetworkImage.h"
     #import "NITableViewModel+Private.h"
     #import "NIMutableTableViewModel+Private.h"
-    
-    // sina mblog sdk
-    #import "WeiboSDK.h"
-
-    // log switch
-    #ifdef DEBUG
-    #    define NSLog(...) NSLog(__VA_ARGS__)
-    #else
-    #    define NSLog(...) {}
-    #endif
 
 #endif

@@ -8,19 +8,16 @@
 
 #import "SMStatusCell.h"
 #import <QuartzCore/QuartzCore.h>
-#import "NSDateAdditions.h"
 #import "SMStatusEntity.h"
 
 #define TITLE_FONT_SIZE [UIFont systemFontOfSize:15.f]
 #define SUBTITLE_FONT_SIZE [UIFont systemFontOfSize:12.f]
 #define CONTENT_FONT_SIZE [UIFont systemFontOfSize:18.f]
 #define HEAD_IAMGE_HEIGHT 34
-#define CONTENT_IMAGE_HEIGHT 160
 
 @interface SMStatusCell()
 @property (nonatomic, strong) UILabel* contentLabel;
 @property (nonatomic, strong) NINetworkImageView* headView;
-@property (nonatomic, strong) NINetworkImageView* contentImageView;
 @end
 @implementation SMStatusCell
 
@@ -44,14 +41,6 @@
         CGSize titleSize = [o.text sizeWithFont:CONTENT_FONT_SIZE constrainedToSize:CGSizeMake(kContentLength, FLT_MAX)];
         height = height + titleSize.height;
         
-        // content image
-        if (o.thumbnail_pic.length) {
-            height = height + CELL_PADDING_10;
-            height = height + CONTENT_IMAGE_HEIGHT;
-        }
-
-        // TODO: button
-        
         height = height + sideMargin;
         
         return height;
@@ -67,6 +56,7 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleBlue;
         
+        // head image
         self.headView = [[NINetworkImageView alloc] initWithFrame:CGRectMake(0, 0, HEAD_IAMGE_HEIGHT,
                                                                                    HEAD_IAMGE_HEIGHT)];
         [self.contentView addSubview:self.headView];
@@ -88,11 +78,6 @@
         self.contentLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview:self.contentLabel];
         
-        // content image
-        self.contentImageView = [[NINetworkImageView alloc] initWithFrame:CGRectMake(0, 0, CONTENT_IMAGE_HEIGHT,
-                                                                             CONTENT_IMAGE_HEIGHT)];
-        [self.contentView addSubview:self.contentImageView];
-        
         self.contentView.layer.borderColor = CELL_CONTENT_VIEW_BORDER_COLOR.CGColor;
         self.contentView.layer.borderWidth = 1.0f;
     }
@@ -104,6 +89,9 @@
 - (void)prepareForReuse
 {
     [super prepareForReuse];
+    if (self.headView.image) {
+        self.headView.image = nil;
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -111,12 +99,14 @@
 {
     [super layoutSubviews];
     
+    // bg color
     self.backgroundColor = [UIColor clearColor];
     self.contentView.backgroundColor = CELL_CONTENT_VIEW_BG_COLOR;
     self.textLabel.backgroundColor = [UIColor clearColor];
     self.detailTextLabel.backgroundColor = [UIColor clearColor];
     self.contentLabel.backgroundColor = [UIColor clearColor];
 
+    // layout
     CGFloat cellMargin = CELL_PADDING_6;
     CGFloat contentViewMarin = CELL_PADDING_8;
     CGFloat sideMargin = cellMargin + contentViewMarin;
@@ -124,6 +114,7 @@
     self.contentView.frame = CGRectMake(cellMargin, cellMargin,
                                         self.width - cellMargin * 2,
                                         self.height - cellMargin * 2);
+    // head image
     self.headView.left = contentViewMarin;
     self.headView.top = contentViewMarin;
     
@@ -143,10 +134,6 @@
                                             constrainedToSize:CGSizeMake(kContentLength, FLT_MAX)];
     self.contentLabel.frame = CGRectMake(self.headView.left, self.headView.bottom + CELL_PADDING_10,
                                         kContentLength, contentSize.height);
-    
-    // content image
-    self.contentImageView.left = self.contentLabel.left;
-    self.contentImageView.top = self.contentLabel.bottom + CELL_PADDING_10;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -155,24 +142,16 @@
     [super shouldUpdateCellWithObject:object];
     if ([object isKindOfClass:[SMStatusEntity class]]) {
         SMStatusEntity* o = (SMStatusEntity*)object;
-        if (o.user.profile_image_url.length) {
-            [self.headView setPathToNetworkImage:o.user.profile_image_url];
+        if (o.user.profileImageUrl.length) {
+            [self.headView setPathToNetworkImage:o.user.profileImageUrl];
         }
         else {
             [self.headView setPathToNetworkImage:nil];
         }
         self.textLabel.text = o.user.name;
         self.detailTextLabel.text = [NSString stringWithFormat:@"%@  %@",
-                                     o.source, [o.timestamp formatRelativeTime]];// 解决动态计算时间
+                                     o.source, [o.timestamp formatRelativeTime]];// dynamic calculate relative time
         self.contentLabel.text = o.text;
-        if (o.thumbnail_pic.length) {
-            self.contentImageView.hidden = NO;
-            [self.contentImageView setPathToNetworkImage:o.thumbnail_pic contentMode:UIViewContentModeCenter];
-        }
-        else {
-            self.contentImageView.hidden = YES;
-            [self.contentImageView setPathToNetworkImage:nil];
-        }
     }
     return YES;
 }

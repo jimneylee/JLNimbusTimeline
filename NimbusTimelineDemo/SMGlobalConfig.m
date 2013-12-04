@@ -24,31 +24,10 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (UIBarButtonItem*)createBarButtonItemWithTitle:(NSString*)buttonTitle target:(id)target action:(SEL)action
-{
-    UIBarButtonItem* item = nil;
-    item = [[UIBarButtonItem alloc] initWithTitle:buttonTitle
-                                            style:UIBarButtonItemStylePlain
-                                           target:target
-                                           action:action];
-    
-    return item;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 + (UIBarButtonItem*)createRefreshBarButtonItemWithTarget:(id)target action:(SEL)action
 {
     UIBarButtonItem* item = nil;
     item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
-                                                         target:target action:action];
-    return item;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (UIBarButtonItem*)createPostBarButtonItemWithTarget:(id)target action:(SEL)action
-{
-    UIBarButtonItem* item = nil;
-    item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                                          target:target action:action];
     return item;
 }

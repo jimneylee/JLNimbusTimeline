@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (SinaMBlog)
+@interface NSDate (formatDateFromString)
 
 + (NSDate *)formatDateFromString:(NSString *)str;
 

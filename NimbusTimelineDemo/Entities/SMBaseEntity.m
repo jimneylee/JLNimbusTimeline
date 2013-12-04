@@ -1,8 +1,8 @@
 //
-//  BaseEntity.m
-//  SinaMBlog
+//  SMBaseEntity.m
+//  SinaMBlogNimbus
 //
-//  Created by Jiang Yu on 13-1-31.
+//  Created by jimneylee on 13-1-31.
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
