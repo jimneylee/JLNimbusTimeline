@@ -1,9 +1,9 @@
 NimbusTimeline
 ==============
 
-NimbusTimeline is a secondary development based on the most popular ios libs [nimbus](https://github.com/jverkoey/nimbus) and [AFNetworking](https://github.com/AFNetworking/AFNetworking),
+secondary development based on the most popular ios libs [nimbus](https://github.com/jverkoey/nimbus) and [AFNetworking](https://github.com/AFNetworking/AFNetworking),
 
-if u want to request timeline data, and show it with tableview, this lib is very useful for u! 
+this lib is very useful for requesting timeline data, and show it with tableview, 
 
 Wish u enjoy it.
 
