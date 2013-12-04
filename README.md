@@ -12,7 +12,6 @@ Wish u enjoy it.
 Screenshots
 ===============
 
-![Screenshot](https://github.com/jimneylee/NimbusTimeline/blob/master/NimbusTimelineDemo/Screenshot/screenshot.jpg "Screenshot")
 ![Screenshot](https://github.com/jimneylee/NimbusTimeline/blob/master/NimbusTimelineDemo/Screenshot/screenshot.png "Screenshot")
 
 Try MacBuildServer Install
@@ -33,4 +32,4 @@ Weibo: [@jimneylee](http://weibo.com/u/1831553040)
 License
 ==============
 
-AFNetworking is available under the MIT license. See the LICENSE file for more info.
+NimbusTimeline is available under the MIT license. See the LICENSE file for more info.
