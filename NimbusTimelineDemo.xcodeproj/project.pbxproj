@@ -77,6 +77,7 @@
 		28B4757D1820EFC30044DF59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B4757C1820EFC30044DF59 /* CoreGraphics.framework */; };
 		28B475C11820FA290044DF59 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B475C01820FA290044DF59 /* MediaPlayer.framework */; };
 		4E03C33DEEED412ABAF0DC41 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050ADDA4C79406E9CFCF300 /* libPods.a */; };
+		CE5223B6184F645B00414BC6 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5223B5184F645B00414BC6 /* screenshot.jpg */; };
 		CEE5261F1840DAD200BF18B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -221,6 +222,7 @@
 		28B475C01820FA290044DF59 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3050ADDA4C79406E9CFCF300 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B466FEF4A8494C228DF493F0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CE5223B5184F645B00414BC6 /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
 		CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -358,6 +360,7 @@
 		28B375FB18473ABA009C69EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE5223B4184F645B00414BC6 /* Screenshot */,
 				28B375E018473A90009C69EE /* NimbusTimelineDemo-Info.plist */,
 				28B375E118473A90009C69EE /* NimbusTimelineDemo-Prefix.pch */,
 				28B375DC18473A90009C69EE /* main.m */,
@@ -525,6 +528,14 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		CE5223B4184F645B00414BC6 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				CE5223B5184F645B00414BC6 /* screenshot.jpg */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -579,6 +590,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5223B6184F645B00414BC6 /* screenshot.jpg in Resources */,
 				28B3762418473FBE009C69EE /* Three20.bundle in Resources */,
 				28B375F218473A90009C69EE /* InfoPlist.strings in Resources */,
 				28B375F018473A90009C69EE /* Default.png in Resources */,

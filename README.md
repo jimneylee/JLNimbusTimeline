@@ -9,6 +9,11 @@ and show them with tableview!
 
 Wish u enjoy it.
 
+Screenshot
+===============
+
+![image](https://github.com/jimneylee/NimbusTimeline/blob/master/NimbusTimelineDemo/Screenshot/screenshot.jpg)
+
 Try MacBuildServer Install
 ===============
 <!-- MacBuildServer Install Button -->
