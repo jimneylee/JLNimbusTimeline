@@ -78,6 +78,7 @@
 		28B475C11820FA290044DF59 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B475C01820FA290044DF59 /* MediaPlayer.framework */; };
 		4E03C33DEEED412ABAF0DC41 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050ADDA4C79406E9CFCF300 /* libPods.a */; };
 		CE5223B6184F645B00414BC6 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5223B5184F645B00414BC6 /* screenshot.jpg */; };
+		CE5223B8184F66A100414BC6 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5223B7184F66A100414BC6 /* screenshot.png */; };
 		CEE5261F1840DAD200BF18B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -223,6 +224,7 @@
 		3050ADDA4C79406E9CFCF300 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B466FEF4A8494C228DF493F0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		CE5223B5184F645B00414BC6 /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
+		CE5223B7184F66A100414BC6 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -532,6 +534,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5223B5184F645B00414BC6 /* screenshot.jpg */,
+				CE5223B7184F66A100414BC6 /* screenshot.png */,
 			);
 			path = Screenshot;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				28B375EF18473A90009C69EE /* Default-568h@2x.png in Resources */,
 				28B375F118473A90009C69EE /* Default@2x.png in Resources */,
 				28B375F718473A90009C69EE /* NimbusTimelineDemo-Info.plist in Resources */,
+				CE5223B8184F66A100414BC6 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
