@@ -6,24 +6,24 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "NIAPIClient.h"
+#import "SMAPIClient.h"
 #import "AFJSONRequestOperation.h"
 #import "AFImageRequestOperation.h"
 
-NSString *const kSNAPIBaseURLString = @"https://api.weibo.com/2/";
+NSString *const kSMAPIBaseURLString = @"https://api.weibo.com/2/";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-@implementation NIAPIClient
+@implementation SMAPIClient
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (NIAPIClient*)sharedClient
++ (SMAPIClient*)sharedClient
 {
-    static NIAPIClient* _sharedClient = nil;
+    static SMAPIClient* _sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[NIAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kSNAPIBaseURLString]];
+        _sharedClient = [[SMAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kSMAPIBaseURLString]];
     });
     
     return _sharedClient;
@@ -48,16 +48,35 @@ NSString *const kSNAPIBaseURLString = @"https://api.weibo.com/2/";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark - GET Request
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)getPath:(NSString *)path
+     parameters:(NSDictionary *)parameters
+        refresh:(BOOL)refresh
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+{
+	NSMutableURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:parameters];
+    if (!refresh) {
+        [request setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
+    }
+    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:success failure:failure];
+    [self enqueueHTTPRequestOperation:operation];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - TimeLine
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// 公共微博某页
+// public time api
 // !note: page -> cusor
 + (NSString*)relativePathForPublicTimelineWithPageCounter:(NSInteger)pageCounter
                                              perpageCount:(NSInteger)perpageCount
 {
     return [NSString stringWithFormat:@"statuses/public_timeline.json?cursor=%d&count=%d&source=%@",
-            pageCounter, perpageCount, SinaWeiboV2AppKey];
+            pageCounter, perpageCount, SinaWeiboAppKey];
 }
 
 @end

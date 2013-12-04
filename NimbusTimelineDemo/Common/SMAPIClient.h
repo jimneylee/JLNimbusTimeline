@@ -8,14 +8,21 @@
 
 #import "AFHTTPClient.h"
 
-@interface NIAPIClient : AFHTTPClient
+@interface SMAPIClient : AFHTTPClient
 
-+ (NIAPIClient*)sharedClient;
++ (SMAPIClient*)sharedClient;
 
-// 随便看看
+// GET refresh else load cache
+- (void)getPath:(NSString *)path
+     parameters:(NSDictionary *)parameters
+        refresh:(BOOL)refresh
+        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
+// public timeline
 + (NSString*)relativePathForPublicTimelineWithPageCounter:(NSInteger)pageCounter
                                              perpageCount:(NSInteger)perpageCount;
 
 @end
 
-NSString *const kSNAPIBaseURLString;
+NSString *const kSMAPIBaseURLString;
