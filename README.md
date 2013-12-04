@@ -12,7 +12,7 @@ Wish u enjoy it.
 Screenshots
 ===============
 
-![Screenshot](https://github.com/jimneylee/NimbusTimeline/blob/master/NimbusTimelineDemo/Screenshot/screenshot.png "Screenshot")
+![Screenshot](https://github.com/jimneylee/NimbusTimeline/raw/master/NimbusTimelineDemo/Screenshot/screenshot.png "Screenshot")
 
 Try MacBuildServer Install
 ===============
