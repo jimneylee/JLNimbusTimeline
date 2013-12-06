@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.author       = { 'jimneylee' => 'jimneylee@gmail.com' }
   s.source       = { :git => "https://github.com/jimneylee/NimbusTimeline", :tag => s.version.to_s }
   s.platform     = :ios
+  s.ios.deployment_target = '6.0'
   s.source_files = 'NimbusTimeline/*.{h,m}'
   s.requires_arc = true
 end
