@@ -9,6 +9,7 @@
 #import "LJJNimbusTableModel.h"
 #import "NITableViewModel+Private.h"
 #import "NITableViewModel.h"
+#import "LJAFHTTPClient.h"
 
 #define PERPAGE_COUNT 20
 #define PAGE_START_INDEX 1

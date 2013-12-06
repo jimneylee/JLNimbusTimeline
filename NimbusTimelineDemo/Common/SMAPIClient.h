@@ -6,18 +6,11 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "AFHTTPClient.h"
+#import "LJAFHTTPClient.h"
 
-@interface SMAPIClient : AFHTTPClient
+@interface SMAPIClient : LJAFHTTPClient
 
 + (SMAPIClient*)sharedClient;
-
-// GET refresh else load cache
-- (void)getPath:(NSString *)path
-     parameters:(NSDictionary *)parameters
-        refresh:(BOOL)refresh
-        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
 // public timeline
 + (NSString*)relativePathForPublicTimelineWithPageCounter:(NSInteger)pageCounter
