@@ -44,7 +44,7 @@
 		2872F35F182104ED008F329D /* NITableViewActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872F354182104ED008F329D /* NITableViewActions.m */; };
 		2872F360182104ED008F329D /* NITableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872F356182104ED008F329D /* NITableViewModel.m */; };
 		287DBC8C18488366002BF4A5 /* SMAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 287DBC8B18488366002BF4A5 /* SMAPIClient.m */; };
-		28AE79F61851BA590062B14B /* NimbusTimeline.podspec  in Resources */ = {isa = PBXBuildFile; fileRef = 28AE79F51851BA580062B14B /* NimbusTimeline.podspec  */; };
+		28AE79F61851BA590062B14B /* NimbusTimeline.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 28AE79F51851BA580062B14B /* NimbusTimeline.podspec */; };
 		28B375E918473A90009C69EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C318473A90009C69EE /* AppDelegate.m */; };
 		28B375EA18473A90009C69EE /* NSDate+formatDateFromString.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C618473A90009C69EE /* NSDate+formatDateFromString.m */; };
 		28B375EB18473A90009C69EE /* NSString+StringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C818473A90009C69EE /* NSString+StringValue.m */; };
@@ -164,7 +164,7 @@
 		2872F357182104ED008F329D /* NITableViewModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NITableViewModel+Private.h"; path = "vendor/nimbus/src/models/src/NITableViewModel+Private.h"; sourceTree = "<group>"; };
 		287DBC8A18488366002BF4A5 /* SMAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAPIClient.h; sourceTree = "<group>"; };
 		287DBC8B18488366002BF4A5 /* SMAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAPIClient.m; sourceTree = "<group>"; };
-		28AE79F51851BA580062B14B /* NimbusTimeline.podspec  */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NimbusTimeline.podspec "; sourceTree = "<group>"; };
+		28AE79F51851BA580062B14B /* NimbusTimeline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NimbusTimeline.podspec; sourceTree = "<group>"; };
 		28B375C218473A90009C69EE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28B375C318473A90009C69EE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28B375C518473A90009C69EE /* NSDate+formatDateFromString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+formatDateFromString.h"; sourceTree = "<group>"; };
@@ -391,7 +391,7 @@
 			children = (
 				28121F1D1822655E00837E25 /* TODO */,
 				28121F1B1822654C00837E25 /* README.md */,
-				28AE79F51851BA580062B14B /* NimbusTimeline.podspec  */,
+				28AE79F51851BA580062B14B /* NimbusTimeline.podspec */,
 				28B375FC18473AE6009C69EE /* NimbusTimeline */,
 				28B375C118473A90009C69EE /* NimbusTimelineDemo */,
 				28121DF41821EAB700837E25 /* Vendor */,
@@ -594,7 +594,7 @@
 			files = (
 				CE5223B6184F645B00414BC6 /* screenshot.jpg in Resources */,
 				28B3762418473FBE009C69EE /* Three20.bundle in Resources */,
-				28AE79F61851BA590062B14B /* NimbusTimeline.podspec  in Resources */,
+				28AE79F61851BA590062B14B /* NimbusTimeline.podspec in Resources */,
 				28B375F218473A90009C69EE /* InfoPlist.strings in Resources */,
 				28B375F018473A90009C69EE /* Default.png in Resources */,
 				28121F1C1822654C00837E25 /* README.md in Resources */,
