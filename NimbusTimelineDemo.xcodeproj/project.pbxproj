@@ -11,6 +11,7 @@
 		28121F1E1822655E00837E25 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 28121F1D1822655E00837E25 /* TODO */; };
 		287DBC8C18488366002BF4A5 /* SMAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 287DBC8B18488366002BF4A5 /* SMAPIClient.m */; };
 		28AE79F61851BA590062B14B /* NimbusTimeline.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 28AE79F51851BA580062B14B /* NimbusTimeline.podspec */; };
+		28AE7A3A1851CB9D0062B14B /* LJAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AE7A391851CB9D0062B14B /* LJAFHTTPClient.m */; };
 		28B375E918473A90009C69EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C318473A90009C69EE /* AppDelegate.m */; };
 		28B375EA18473A90009C69EE /* NSDate+formatDateFromString.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C618473A90009C69EE /* NSDate+formatDateFromString.m */; };
 		28B375EB18473A90009C69EE /* NSString+StringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C818473A90009C69EE /* NSString+StringValue.m */; };
@@ -54,6 +55,8 @@
 		287DBC8A18488366002BF4A5 /* SMAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAPIClient.h; sourceTree = "<group>"; };
 		287DBC8B18488366002BF4A5 /* SMAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAPIClient.m; sourceTree = "<group>"; };
 		28AE79F51851BA580062B14B /* NimbusTimeline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NimbusTimeline.podspec; sourceTree = "<group>"; };
+		28AE7A381851CB9D0062B14B /* LJAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJAFHTTPClient.h; sourceTree = "<group>"; };
+		28AE7A391851CB9D0062B14B /* LJAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJAFHTTPClient.m; sourceTree = "<group>"; };
 		28B375C218473A90009C69EE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28B375C318473A90009C69EE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28B375C518473A90009C69EE /* NSDate+formatDateFromString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+formatDateFromString.h"; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				28B3760018473AE6009C69EE /* LJJNimbusTableModel.m */,
 				28B3760618473C63009C69EE /* LJJNimbusMoreButton.h */,
 				28B3760718473C63009C69EE /* LJJNimbusMoreButton.m */,
+				28AE7A381851CB9D0062B14B /* LJAFHTTPClient.h */,
+				28AE7A391851CB9D0062B14B /* LJAFHTTPClient.m */,
 			);
 			path = NimbusTimeline;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B3760B18473DFF009C69EE /* SMUserInfoEntity.m in Sources */,
+				28AE7A3A1851CB9D0062B14B /* LJAFHTTPClient.m in Sources */,
 				28B375F818473A90009C69EE /* SMGlobalConfig.m in Sources */,
 				28B375FA18473A90009C69EE /* SMStatusCell.m in Sources */,
 				28B3762918473FBE009C69EE /* UIWindowAdditions.m in Sources */,
