@@ -7,6 +7,7 @@
 //
 
 #import "SMPageTimelineModel.h"
+#import "SMAPIClient.h"
 #import "SMStatusEntity.h"
 #import "SMStatusCell.h"
 

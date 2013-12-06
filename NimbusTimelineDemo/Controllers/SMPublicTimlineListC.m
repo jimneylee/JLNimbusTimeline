@@ -65,7 +65,7 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NIActionBlock)tapAction
+- (NITableViewActionBlock)tapAction
 {
     return ^BOOL(id object, id target, NSIndexPath *indexPath) {
         if (!self.editing) {
