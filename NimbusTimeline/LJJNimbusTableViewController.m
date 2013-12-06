@@ -221,7 +221,7 @@
 {
     CGFloat height = - self.refreshControl.frame.size.height;
     if (IOS_IS_AT_LEAST_7 && self.navigationController.navigationBar.translucent) {
-        CGFloat navigationBarBottom = (self.navigationController.navigationBar.origin.y
+        CGFloat navigationBarBottom = (self.navigationController.navigationBar.frame.origin.y
                                        + self.navigationController.navigationBar.frame.size.height);
         height = - (navigationBarBottom + self.refreshControl.frame.size.height);
     }
@@ -237,7 +237,7 @@
 {
     CGFloat height = 0.0f;
     if (IOS_IS_AT_LEAST_7 && self.navigationController.navigationBar.translucent) {
-        CGFloat navigationBarBottom = (self.navigationController.navigationBar.origin.y
+        CGFloat navigationBarBottom = (self.navigationController.navigationBar.frame.origin.y
                                        + self.navigationController.navigationBar.frame.size.height);
         
         height = - navigationBarBottom;//bottom

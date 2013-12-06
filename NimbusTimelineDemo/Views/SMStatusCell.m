@@ -8,6 +8,7 @@
 
 #import "SMStatusCell.h"
 #import <QuartzCore/QuartzCore.h>
+#import "NimbusNetworkImage.h"
 #import "SMStatusEntity.h"
 
 #define TITLE_FONT_SIZE [UIFont systemFontOfSize:15.f]

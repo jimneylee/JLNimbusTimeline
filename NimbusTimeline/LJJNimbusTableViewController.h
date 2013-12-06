@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NITableViewModel+Private.h"
+#import "NIMutableTableViewModel+Private.h"
 #import "LJJNimbusTableModel.h"
 
 @interface LJJNimbusTableViewController : UITableViewController
