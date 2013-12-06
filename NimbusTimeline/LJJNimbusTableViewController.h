@@ -11,7 +11,7 @@
 
 @interface LJJNimbusTableViewController : UITableViewController
 
-@property (nonatomic, strong) NIActionBlock tapAction;
+@property (nonatomic, assign) NITableViewActionBlock tapAction;
 @property (nonatomic, strong) LJJNimbusTableModel* model;
 @property (nonatomic, strong) NITableViewActions* actions;
 @property (nonatomic, strong) NICellFactory* cellFactory;
