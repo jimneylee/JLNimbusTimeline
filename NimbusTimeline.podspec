@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NimbusTimeline"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "Easy to deal with timeline data and show it with tableview"
   s.description  = <<-DESC
                     Secondary development based on the most popular ios libs nimbus and AFNetworking,
