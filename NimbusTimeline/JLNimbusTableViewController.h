@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LJJNimbusTableModel.h"
+#import "JLNimbusTableModel.h"
 
-@interface LJJNimbusTableViewController : UITableViewController
+@interface JLNimbusTableViewController : UITableViewController
 
 @property (nonatomic, assign) NITableViewActionBlock tapAction;
-@property (nonatomic, strong) LJJNimbusTableModel* model;
+@property (nonatomic, strong) JLNimbusTableModel* model;
 @property (nonatomic, strong) NITableViewActions* actions;
 @property (nonatomic, strong) NICellFactory* cellFactory;
 

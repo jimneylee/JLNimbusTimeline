@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "LJJNimbusMoreButton.h"
+#import "JLNimbusMoreButton.h"
 
 #define MORE_BUTTON_HEIGHT 55
 #define SIDE_MARGIN 8
@@ -14,15 +14,15 @@
 #define DEFAULT_LOADING_TITLE  @"加载中..."
 #define DEFAULT_MORE_TITLE @"上拉显示更多"
 
-@interface LJJNimbusMoreButton()
+@interface JLNimbusMoreButton()
 @end
-@implementation LJJNimbusMoreButton
+@implementation JLNimbusMoreButton
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (id)defaultMoreButton
 {
-    LJJNimbusMoreButton* moreBtn =
-    [[LJJNimbusMoreButton alloc] initWithFrame:CGRectMake(0.f, 0.f,
+    JLNimbusMoreButton* moreBtn =
+    [[JLNimbusMoreButton alloc] initWithFrame:CGRectMake(0.f, 0.f,
                                                           [[UIScreen mainScreen] bounds].size.width,
                                                           MORE_BUTTON_HEIGHT)];
     moreBtn.backgroundColor = [UIColor clearColor];

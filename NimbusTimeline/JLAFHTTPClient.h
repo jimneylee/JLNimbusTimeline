@@ -8,9 +8,9 @@
 
 #import "AFHTTPClient.h"
 
-@interface LJAFHTTPClient : AFHTTPClient
+@interface JLAFHTTPClient : AFHTTPClient
 
-+ (LJAFHTTPClient*)sharedClient;
++ (JLAFHTTPClient*)sharedClient;
 
 // GET refresh else load cache
 - (void)getPath:(NSString *)path

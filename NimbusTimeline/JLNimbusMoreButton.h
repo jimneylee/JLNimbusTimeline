@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LJJNimbusMoreButton : UIButton
+@interface JLNimbusMoreButton : UIButton
 
 @property (nonatomic, strong) UILabel* textLabel;
 @property (nonatomic, strong) UIActivityIndicatorView* activityIndicatorView;
