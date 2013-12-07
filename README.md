@@ -1,7 +1,7 @@
 NimbusTimeline
 ==============
 
-NimbusTimeline is based on MVC pattern, built using nimbus(https://github.com/jverkoey/nimbus), [AFNetworking](https://github.com/AFNetworking/AFNetworking) and some userfull categories of [Three20](https://github.com/facebook/three20). 
+NimbusTimeline is based on MVC pattern, built using [Nimbus](https://github.com/jverkoey/nimbus), [AFNetworking](https://github.com/AFNetworking/AFNetworking) and some userfull categories of [Three20](https://github.com/facebook/three20). 
 
 It is designed to process and display the timeline data in tableview. It is very lightweight.
 
