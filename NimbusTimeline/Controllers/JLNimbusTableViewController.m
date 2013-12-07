@@ -277,7 +277,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)didFinishLoadData
 {
-    if (self.model.hasMoreEntity) {
+    if (self.model.hasMoreData) {
         if (!self.loadMoreFooterView ) {
             [self createLoadMoreFooterView];
         }

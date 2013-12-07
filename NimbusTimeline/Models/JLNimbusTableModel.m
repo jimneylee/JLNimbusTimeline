@@ -10,6 +10,7 @@
 #import "NITableViewModel+Private.h"
 #import "NITableViewModel.h"
 #import "JLAFHTTPClient.h"
+#import "JLNimbusSubtitleCellObject.h"
 
 #define PERPAGE_COUNT 20
 #define PAGE_START_INDEX 1
@@ -27,7 +28,7 @@
 	{
 		self.pageCounter = PAGE_START_INDEX;
         self.perpageCount = PERPAGE_COUNT;
-		self.hasMoreEntity = YES;
+		self.hasMoreData = YES;
         
         if (delegate && [delegate isKindOfClass:[NICellFactory class]]) {
             NICellFactory* factory = (NICellFactory*)delegate;
@@ -109,10 +110,10 @@
                                             [self removeSectionAtIndex:0];
                                         }
                                     }
-                                    NSArray* objects = [self parseResponseObject:responseObject];
+                                    NSArray* entities = [self entitiesParsedFromResponseObject:responseObject];
                                     NSArray* indexPaths = nil;
-                                    if (objects.count) {
-                                        indexPaths = [self addObjectsFromArray:objects];
+                                    if (entities.count) {
+                                        indexPaths = [self addObjectsFromArray:entities];
                                     }
                                     else {
                                         // just set empty array, show empty data but no error
@@ -138,37 +139,37 @@
 - (NSArray*)entitiesParsedFromListData:(NSArray*)listDataArray
 {
 	if (listDataArray.count > 0) {
-        NSMutableArray* objects = [NSMutableArray arrayWithCapacity:listDataArray.count];
-        if ([[self objectClass] respondsToSelector:@selector(entityWithDictionary:)]) {
+        NSMutableArray* entities = [NSMutableArray arrayWithCapacity:listDataArray.count];
+        if ([[self objectClass] respondsToSelector:@selector(objectWithDictionary:)]) {
             for (NSDictionary* dic in listDataArray) {
-                id entity = [[self objectClass] entityWithDictionary:dic];
-                [objects addObject:entity];
+                id entity = [[self objectClass] objectWithDictionary:dic];
+                [entities addObject:entity];
             }
-            return objects;
+            return entities;
         }
 	}
 	return nil;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSArray*)parseResponseObject:(id)responseObject
+- (NSArray*)entitiesParsedFromResponseObject:(id)responseObject
 {
-    NSArray* objects = nil;
+    NSArray* entities = nil;
     if ([responseObject isKindOfClass:[NSDictionary class]]) {
         NSDictionary* rootDictionary = (NSDictionary*)responseObject;
         NSArray* listDataArray = [self getListData:rootDictionary];
-        objects = [self entitiesParsedFromListData:listDataArray];
-        self.hasMoreEntity = (objects.count >= self.perpageCount) ? YES : NO;
+        entities = [self entitiesParsedFromListData:listDataArray];
+        self.hasMoreData = (entities.count >= self.perpageCount) ? YES : NO;
     }
     else if ([responseObject isKindOfClass:[NSArray class]]) {
-        objects = [self entitiesParsedFromListData:responseObject];
-        self.hasMoreEntity = (objects.count >= self.perpageCount) ? YES : NO;
+        entities = [self entitiesParsedFromListData:responseObject];
+        self.hasMoreData = (entities.count >= self.perpageCount) ? YES : NO;
     }
     else {
-        self.hasMoreEntity = NO;
+        self.hasMoreData = NO;
     }
     
-    return objects;
+    return entities;
 }
 
 @end

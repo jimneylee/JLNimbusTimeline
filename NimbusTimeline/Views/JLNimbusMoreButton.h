@@ -6,8 +6,6 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface JLNimbusMoreButton : UIButton
 
 @property (nonatomic, strong) UILabel* textLabel;
