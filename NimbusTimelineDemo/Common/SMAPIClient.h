@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "LJAFHTTPClient.h"
+#import "JLAFHTTPClient.h"
 
-@interface SMAPIClient : LJAFHTTPClient
+@interface SMAPIClient : JLAFHTTPClient
 
 + (SMAPIClient*)sharedClient;
 

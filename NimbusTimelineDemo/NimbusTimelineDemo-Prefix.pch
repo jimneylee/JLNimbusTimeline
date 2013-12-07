@@ -23,11 +23,7 @@
     #import "UIViewAdditions.h"
     #import "NSDateAdditions.h"
 
-    // nimbus
-    #import "NimbusModels.h"
-    #import "NimbusCore.h"
-    #import "NimbusNetworkImage.h"
-    #import "NITableViewModel+Private.h"
-    #import "NIMutableTableViewModel+Private.h"
+    // JLNimbusTimeline
+    #import "JLNimbusTimeline.h"
 
 #endif

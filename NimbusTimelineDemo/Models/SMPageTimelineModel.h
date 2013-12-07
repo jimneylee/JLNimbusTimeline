@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 jimneylee. All rights reserved.
 //
 
-#import "LJJNimbusTableModel.h"
+#import "JLNimbusTableModel.h"
 
-@interface SMPageTimelineModel : LJJNimbusTableModel
+@interface SMPageTimelineModel : JLNimbusTableModel
 
 @end

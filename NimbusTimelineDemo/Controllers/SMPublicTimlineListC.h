@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "LJJNimbusTableViewController.h"
+#import "JLNimbusTableViewController.h"
 
-@interface SMPublicTimlineListC : LJJNimbusTableViewController
+@interface SMPublicTimlineListC : JLNimbusTableViewController
 
 @end
