@@ -1,5 +1,5 @@
 //
-//  LJJBaseTableC.m
+//  JLNimbusTableModel.m
 //  SkyNet
 //
 //  Created by jimneylee on 13-7-29.
