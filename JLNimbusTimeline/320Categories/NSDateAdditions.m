@@ -38,6 +38,13 @@
 #pragma mark -
 #pragma mark Class public
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (NSDate *)formatDateFromString:(NSString *)string {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    [dateFormatter setDateFormat:@"EEE MMM dd HH:mm:ss '+0800' yyyy"];
+    return [dateFormatter dateFromString:str];
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (NSDate*)dateWithToday {
