@@ -110,14 +110,4 @@
  */
 @property (nonatomic) CGSize size;
 
-/**
- * Return the width in portrait or the height in landscape.
- */
-@property (nonatomic, readonly) CGFloat orientationWidth;
-
-/**
- * Return the height in portrait or the width in landscape.
- */
-@property (nonatomic, readonly) CGFloat orientationHeight;
-
 @end
