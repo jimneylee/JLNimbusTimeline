@@ -6,10 +6,10 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "SMBaseEntity.h"
+#import "JLNimbusEntity.h"
 #import "SMUserInfoEntity.h"
 
-@interface SMUserInfoEntity : SMBaseEntity
+@interface SMUserInfoEntity : JLNimbusEntity
 
 @property(nonatomic, copy) NSString *name;
 @property(nonatomic, copy) NSString *profileImageUrl;

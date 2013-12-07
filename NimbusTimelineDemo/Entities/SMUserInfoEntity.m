@@ -29,7 +29,7 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (SMBaseEntity *)entityWithDictionary:(NSDictionary *)dic {
++ (SMUserInfoEntity *)entityWithDictionary:(NSDictionary *)dic {
     if (!dic.count || ![dic isKindOfClass:[NSDictionary class]]) {
         return nil;
     }

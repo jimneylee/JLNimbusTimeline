@@ -6,11 +6,10 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "SMBaseEntity.h"
+#import "JLNimbusEntity.h"
 #import "SMUserInfoEntity.h"
 
-@interface SMStatusEntity : SMBaseEntity
+@interface SMStatusEntity : JLNimbusEntity
 
 @property (nonatomic, strong) SMUserInfoEntity *user;
 @property (nonatomic, copy) NSString *created_at;
