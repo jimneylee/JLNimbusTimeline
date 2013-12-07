@@ -1,11 +1,11 @@
 NimbusTimeline
 ==============
 
-secondary development based on the most popular ios libs [nimbus](https://github.com/jverkoey/nimbus) and [AFNetworking](https://github.com/AFNetworking/AFNetworking),
+NimbusTimeline is based on MVC pattern, built using nimbus(https://github.com/jverkoey/nimbus), [AFNetworking](https://github.com/AFNetworking/AFNetworking) and some userfull categories of [Three20](https://github.com/facebook/three20). 
 
-this lib is very useful for requesting timeline data, and show it with tableview, 
+It is designed to process and display the timeline data in tableview. It is very lightweight.
 
-Wish u enjoy it.
+wish U enjoy it and glad to see your pull request or propose your issue. 
 
 Screenshots
 ===============
