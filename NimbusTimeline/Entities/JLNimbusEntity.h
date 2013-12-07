@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-@interface JLNimbusSubtitleCellObject : NISubtitleCellObject
+@interface JLNimbusEntity : NISubtitleCellObject
 
 - (id)initWithDictionary:(NSDictionary*)dic;
-+ (id)objectWithDictionary:(NSDictionary*)dic;
++ (id)entityWithDictionary:(NSDictionary*)dic;
 
 @end

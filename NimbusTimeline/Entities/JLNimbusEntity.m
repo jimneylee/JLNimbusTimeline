@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "JLNimbusSubtitleCellObject.h"
+#import "JLNimbusEntity.h"
 
-@implementation JLNimbusSubtitleCellObject
+@implementation JLNimbusEntity
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithDictionary:(NSDictionary*)dic
@@ -25,13 +25,13 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (id)objectWithDictionary:(NSDictionary*)dic
++ (id)entityWithDictionary:(NSDictionary*)dic
 {
     if (!dic || ![dic isKindOfClass:[NSDictionary class]]) {
         return nil;
     }
     
-    JLNimbusSubtitleCellObject* entity = [[JLNimbusSubtitleCellObject alloc] initWithDictionary:dic];
+    JLNimbusEntity* entity = [[JLNimbusEntity alloc] initWithDictionary:dic];
     return entity;
 }
 

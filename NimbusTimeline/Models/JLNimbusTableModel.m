@@ -10,7 +10,7 @@
 #import "NITableViewModel+Private.h"
 #import "NITableViewModel.h"
 #import "JLAFHTTPClient.h"
-#import "JLNimbusSubtitleCellObject.h"
+#import "JLNimbusEntity.h"
 
 #define PERPAGE_COUNT 20
 #define PAGE_START_INDEX 1
@@ -140,9 +140,9 @@
 {
 	if (listDataArray.count > 0) {
         NSMutableArray* entities = [NSMutableArray arrayWithCapacity:listDataArray.count];
-        if ([[self objectClass] respondsToSelector:@selector(objectWithDictionary:)]) {
+        if ([[self objectClass] respondsToSelector:@selector(entityWithDictionary:)]) {
             for (NSDictionary* dic in listDataArray) {
-                id entity = [[self objectClass] objectWithDictionary:dic];
+                id entity = [[self objectClass] entityWithDictionary:dic];
                 [entities addObject:entity];
             }
             return entities;
