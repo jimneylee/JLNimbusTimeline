@@ -8,6 +8,7 @@
 
 #import "JLNimbusTableViewController.h"
 #import "JLNimbusMoreButton.h"
+#import "UIViewAdditions.h"
 
 #ifndef IOS_IS_AT_LEAST_7
 #define IOS_IS_AT_LEAST_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
@@ -219,11 +220,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)pullDownLoadingAnimation
 {
-    CGFloat height = - self.refreshControl.frame.size.height;
+    CGFloat height = - self.refreshControl.height;
     if (IOS_IS_AT_LEAST_7 && self.navigationController.navigationBar.translucent) {
-        CGFloat navigationBarBottom = (self.navigationController.navigationBar.frame.origin.y
-                                       + self.navigationController.navigationBar.frame.size.height);
-        height = - (navigationBarBottom + self.refreshControl.frame.size.height);
+        CGFloat navigationBarBottom = (self.navigationController.navigationBar.top
+                                       + self.navigationController.navigationBar.height);
+        height = - (navigationBarBottom + self.refreshControl.height);
     }
     
     [UIView animateWithDuration:DEFAULT_PULL_DOWN_REFRESH_DURATION
@@ -237,8 +238,8 @@
 {
     CGFloat height = 0.0f;
     if (IOS_IS_AT_LEAST_7 && self.navigationController.navigationBar.translucent) {
-        CGFloat navigationBarBottom = (self.navigationController.navigationBar.frame.origin.y
-                                       + self.navigationController.navigationBar.frame.size.height);
+        CGFloat navigationBarBottom = (self.navigationController.navigationBar.top
+                                       + self.navigationController.navigationBar.height);
         
         height = - navigationBarBottom;//bottom
     }
@@ -313,8 +314,8 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     if (self.loadMoreFooterView) {
-        CGFloat endScrolling = scrollView.contentOffset.y + scrollView.frame.size.height;
-        if (scrollView.contentSize.height > scrollView.frame.size.height
+        CGFloat endScrolling = scrollView.contentOffset.y + scrollView.height;
+        if (scrollView.contentSize.height > scrollView.height
             && endScrolling >= scrollView.contentSize.height + DEFAULT_DRAG_UP_BOTTOM_OFFSET) {
             [self loadMoreAction];
         }

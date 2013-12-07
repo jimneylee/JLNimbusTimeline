@@ -7,6 +7,7 @@
 //
 
 #import "JLNimbusMoreButton.h"
+#import "UIViewAdditions.h"
 
 #define MORE_BUTTON_HEIGHT 55
 #define SIDE_MARGIN 8
@@ -48,7 +49,7 @@
 	[super layoutSubviews];
     self.textLabel.frame = self.bounds;
     self.activityIndicatorView.center =
-    CGPointMake(self.frame.size.width - self.activityIndicatorView.frame.size.width - SIDE_MARGIN * 2,
+    CGPointMake(self.width - self.activityIndicatorView.width - SIDE_MARGIN * 2,
                 self.textLabel.center.y);
 }
 

@@ -19,10 +19,6 @@
     // MBProgressHUD
     #import "MBProgressHUD.h"
 
-    // three20 category
-    #import "UIViewAdditions.h"
-    #import "NSDateAdditions.h"
-
     // JLNimbusTimeline
     #import "JLNimbusTimeline.h"
 
