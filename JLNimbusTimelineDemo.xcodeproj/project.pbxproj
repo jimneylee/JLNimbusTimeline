@@ -10,7 +10,6 @@
 		28121F1C1822654C00837E25 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28121F1B1822654C00837E25 /* README.md */; };
 		28121F1E1822655E00837E25 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 28121F1D1822655E00837E25 /* TODO */; };
 		287DBC8C18488366002BF4A5 /* SMAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 287DBC8B18488366002BF4A5 /* SMAPIClient.m */; };
-		28AE79F61851BA590062B14B /* NimbusTimeline.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 28AE79F51851BA580062B14B /* NimbusTimeline.podspec */; };
 		28B375E918473A90009C69EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C318473A90009C69EE /* AppDelegate.m */; };
 		28B375EA18473A90009C69EE /* NSDate+formatDateFromString.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C618473A90009C69EE /* NSDate+formatDateFromString.m */; };
 		28B375EB18473A90009C69EE /* NSString+StringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B375C818473A90009C69EE /* NSString+StringValue.m */; };
@@ -29,22 +28,23 @@
 		28B4757B1820EFC30044DF59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B4757A1820EFC30044DF59 /* Foundation.framework */; };
 		28B4757D1820EFC30044DF59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B4757C1820EFC30044DF59 /* CoreGraphics.framework */; };
 		4E03C33DEEED412ABAF0DC41 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050ADDA4C79406E9CFCF300 /* libPods.a */; };
-		CE1150AC1852AF8100A7E960 /* JLNimbusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1150A11852AF8100A7E960 /* JLNimbusTableViewController.m */; };
-		CE1150AD1852AF8100A7E960 /* JLAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1150A51852AF8100A7E960 /* JLAFHTTPClient.m */; };
-		CE1150AE1852AF8100A7E960 /* JLNimbusTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1150A71852AF8100A7E960 /* JLNimbusTableModel.m */; };
-		CE1150AF1852AF8100A7E960 /* JLNimbusMoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1150AA1852AF8100A7E960 /* JLNimbusMoreButton.m */; };
-		CE1150B21852AFC200A7E960 /* JLNimbusEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1150B11852AFC200A7E960 /* JLNimbusEntity.m */; };
 		CE5223B6184F645B00414BC6 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5223B5184F645B00414BC6 /* screenshot.jpg */; };
 		CE5223B8184F66A100414BC6 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5223B7184F66A100414BC6 /* screenshot.png */; };
-		CE9E546E18535F2D00FBBD6D /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E545D18535F2D00FBBD6D /* NSDataAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E546F18535F2D00FBBD6D /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E545F18535F2D00FBBD6D /* NSDateAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E547018535F2D00FBBD6D /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E546118535F2D00FBBD6D /* NSStringAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E547118535F2D00FBBD6D /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE9E546218535F2D00FBBD6D /* Three20.bundle */; };
-		CE9E547218535F2D00FBBD6D /* TTGlobalCoreLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E546518535F2D00FBBD6D /* TTGlobalCoreLocale.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E547318535F2D00FBBD6D /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E546718535F2D00FBBD6D /* TTGlobalUICommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E547418535F2D00FBBD6D /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E546918535F2D00FBBD6D /* UIFontAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E547518535F2D00FBBD6D /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E546B18535F2D00FBBD6D /* UIViewAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CE9E547618535F2D00FBBD6D /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E546D18535F2D00FBBD6D /* UIWindowAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE9E54781853640500FBBD6D /* JLNimbusTimeline.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE9E54771853640500FBBD6D /* JLNimbusTimeline.podspec */; };
+		CE9E549C1853644A00FBBD6D /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E547C1853644A00FBBD6D /* NSDataAdditions.m */; };
+		CE9E549D1853644A00FBBD6D /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E547E1853644A00FBBD6D /* NSDateAdditions.m */; };
+		CE9E549E1853644A00FBBD6D /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54801853644A00FBBD6D /* NSStringAdditions.m */; };
+		CE9E549F1853644A00FBBD6D /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE9E54811853644A00FBBD6D /* Three20.bundle */; };
+		CE9E54A01853644A00FBBD6D /* TTGlobalCoreLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54841853644A00FBBD6D /* TTGlobalCoreLocale.m */; };
+		CE9E54A11853644A00FBBD6D /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54861853644A00FBBD6D /* TTGlobalUICommon.m */; };
+		CE9E54A21853644A00FBBD6D /* UIFontAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54881853644A00FBBD6D /* UIFontAdditions.m */; };
+		CE9E54A31853644A00FBBD6D /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E548A1853644A00FBBD6D /* UIViewAdditions.m */; };
+		CE9E54A41853644A00FBBD6D /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E548C1853644A00FBBD6D /* UIWindowAdditions.m */; };
+		CE9E54A51853644A00FBBD6D /* JLNimbusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E548F1853644A00FBBD6D /* JLNimbusTableViewController.m */; };
+		CE9E54A61853644A00FBBD6D /* JLNimbusEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54921853644A00FBBD6D /* JLNimbusEntity.m */; };
+		CE9E54A71853644A00FBBD6D /* JLAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54961853644A00FBBD6D /* JLAFHTTPClient.m */; };
+		CE9E54A81853644A00FBBD6D /* JLNimbusTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54981853644A00FBBD6D /* JLNimbusTableModel.m */; };
+		CE9E54A91853644A00FBBD6D /* JLNimbusMoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E549B1853644A00FBBD6D /* JLNimbusMoreButton.m */; };
 		CEE5261F1840DAD200BF18B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,6 @@
 		28121F1D1822655E00837E25 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		287DBC8A18488366002BF4A5 /* SMAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAPIClient.h; sourceTree = "<group>"; };
 		287DBC8B18488366002BF4A5 /* SMAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAPIClient.m; sourceTree = "<group>"; };
-		28AE79F51851BA580062B14B /* NimbusTimeline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NimbusTimeline.podspec; sourceTree = "<group>"; };
 		28B375C218473A90009C69EE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28B375C318473A90009C69EE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28B375C518473A90009C69EE /* NSDate+formatDateFromString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+formatDateFromString.h"; sourceTree = "<group>"; };
@@ -72,51 +71,52 @@
 		28B375DC18473A90009C69EE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28B375DE18473A90009C69EE /* SMPageTimelineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageTimelineModel.h; sourceTree = "<group>"; };
 		28B375DF18473A90009C69EE /* SMPageTimelineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageTimelineModel.m; sourceTree = "<group>"; };
-		28B375E018473A90009C69EE /* NimbusTimelineDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NimbusTimelineDemo-Info.plist"; sourceTree = "<group>"; };
-		28B375E118473A90009C69EE /* NimbusTimelineDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NimbusTimelineDemo-Prefix.pch"; sourceTree = "<group>"; };
+		28B375E018473A90009C69EE /* JLNimbusTimelineDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JLNimbusTimelineDemo-Info.plist"; sourceTree = "<group>"; };
+		28B375E118473A90009C69EE /* JLNimbusTimelineDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JLNimbusTimelineDemo-Prefix.pch"; sourceTree = "<group>"; };
 		28B375E218473A90009C69EE /* SMGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMGlobalConfig.h; sourceTree = "<group>"; };
 		28B375E318473A90009C69EE /* SMGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMGlobalConfig.m; sourceTree = "<group>"; };
 		28B375E718473A90009C69EE /* SMStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStatusCell.h; sourceTree = "<group>"; };
 		28B375E818473A90009C69EE /* SMStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStatusCell.m; sourceTree = "<group>"; };
 		28B3760918473DFF009C69EE /* SMUserInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUserInfoEntity.h; sourceTree = "<group>"; };
 		28B3760A18473DFF009C69EE /* SMUserInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMUserInfoEntity.m; sourceTree = "<group>"; };
-		28B475751820EFC30044DF59 /* NimbusTimelineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbusTimelineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B475751820EFC30044DF59 /* JLNimbusTimelineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLNimbusTimelineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B475781820EFC30044DF59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28B4757A1820EFC30044DF59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28B4757C1820EFC30044DF59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3050ADDA4C79406E9CFCF300 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B466FEF4A8494C228DF493F0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		CE1150991852A26E00A7E960 /* JLNimbusTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTimeline.h; sourceTree = "<group>"; };
-		CE1150A01852AF8100A7E960 /* JLNimbusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTableViewController.h; sourceTree = "<group>"; };
-		CE1150A11852AF8100A7E960 /* JLNimbusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusTableViewController.m; sourceTree = "<group>"; };
-		CE1150A41852AF8100A7E960 /* JLAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAFHTTPClient.h; sourceTree = "<group>"; };
-		CE1150A51852AF8100A7E960 /* JLAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAFHTTPClient.m; sourceTree = "<group>"; };
-		CE1150A61852AF8100A7E960 /* JLNimbusTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTableModel.h; sourceTree = "<group>"; };
-		CE1150A71852AF8100A7E960 /* JLNimbusTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusTableModel.m; sourceTree = "<group>"; };
-		CE1150A91852AF8100A7E960 /* JLNimbusMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusMoreButton.h; sourceTree = "<group>"; };
-		CE1150AA1852AF8100A7E960 /* JLNimbusMoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusMoreButton.m; sourceTree = "<group>"; };
-		CE1150B01852AFC200A7E960 /* JLNimbusEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusEntity.h; sourceTree = "<group>"; };
-		CE1150B11852AFC200A7E960 /* JLNimbusEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusEntity.m; sourceTree = "<group>"; };
 		CE5223B5184F645B00414BC6 /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
 		CE5223B7184F66A100414BC6 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
-		CE9E545C18535F2D00FBBD6D /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
-		CE9E545D18535F2D00FBBD6D /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
-		CE9E545E18535F2D00FBBD6D /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
-		CE9E545F18535F2D00FBBD6D /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
-		CE9E546018535F2D00FBBD6D /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
-		CE9E546118535F2D00FBBD6D /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
-		CE9E546218535F2D00FBBD6D /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Three20.bundle; sourceTree = "<group>"; };
-		CE9E546318535F2D00FBBD6D /* TTCorePreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCorePreprocessorMacros.h; sourceTree = "<group>"; };
-		CE9E546418535F2D00FBBD6D /* TTGlobalCoreLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCoreLocale.h; sourceTree = "<group>"; };
-		CE9E546518535F2D00FBBD6D /* TTGlobalCoreLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGlobalCoreLocale.m; sourceTree = "<group>"; };
-		CE9E546618535F2D00FBBD6D /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalUICommon.h; sourceTree = "<group>"; };
-		CE9E546718535F2D00FBBD6D /* TTGlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGlobalUICommon.m; sourceTree = "<group>"; };
-		CE9E546818535F2D00FBBD6D /* UIFontAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontAdditions.h; sourceTree = "<group>"; };
-		CE9E546918535F2D00FBBD6D /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontAdditions.m; sourceTree = "<group>"; };
-		CE9E546A18535F2D00FBBD6D /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
-		CE9E546B18535F2D00FBBD6D /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
-		CE9E546C18535F2D00FBBD6D /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindowAdditions.h; sourceTree = "<group>"; };
-		CE9E546D18535F2D00FBBD6D /* UIWindowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWindowAdditions.m; sourceTree = "<group>"; };
+		CE9E54771853640500FBBD6D /* JLNimbusTimeline.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JLNimbusTimeline.podspec; sourceTree = "<group>"; };
+		CE9E547B1853644A00FBBD6D /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		CE9E547C1853644A00FBBD6D /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		CE9E547D1853644A00FBBD6D /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		CE9E547E1853644A00FBBD6D /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		CE9E547F1853644A00FBBD6D /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		CE9E54801853644A00FBBD6D /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		CE9E54811853644A00FBBD6D /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Three20.bundle; sourceTree = "<group>"; };
+		CE9E54821853644A00FBBD6D /* TTCorePreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCorePreprocessorMacros.h; sourceTree = "<group>"; };
+		CE9E54831853644A00FBBD6D /* TTGlobalCoreLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCoreLocale.h; sourceTree = "<group>"; };
+		CE9E54841853644A00FBBD6D /* TTGlobalCoreLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGlobalCoreLocale.m; sourceTree = "<group>"; };
+		CE9E54851853644A00FBBD6D /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalUICommon.h; sourceTree = "<group>"; };
+		CE9E54861853644A00FBBD6D /* TTGlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGlobalUICommon.m; sourceTree = "<group>"; };
+		CE9E54871853644A00FBBD6D /* UIFontAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontAdditions.h; sourceTree = "<group>"; };
+		CE9E54881853644A00FBBD6D /* UIFontAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontAdditions.m; sourceTree = "<group>"; };
+		CE9E54891853644A00FBBD6D /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		CE9E548A1853644A00FBBD6D /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		CE9E548B1853644A00FBBD6D /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindowAdditions.h; sourceTree = "<group>"; };
+		CE9E548C1853644A00FBBD6D /* UIWindowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWindowAdditions.m; sourceTree = "<group>"; };
+		CE9E548E1853644A00FBBD6D /* JLNimbusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTableViewController.h; sourceTree = "<group>"; };
+		CE9E548F1853644A00FBBD6D /* JLNimbusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusTableViewController.m; sourceTree = "<group>"; };
+		CE9E54911853644A00FBBD6D /* JLNimbusEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusEntity.h; sourceTree = "<group>"; };
+		CE9E54921853644A00FBBD6D /* JLNimbusEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusEntity.m; sourceTree = "<group>"; };
+		CE9E54931853644A00FBBD6D /* JLNimbusTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTimeline.h; sourceTree = "<group>"; };
+		CE9E54951853644A00FBBD6D /* JLAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAFHTTPClient.h; sourceTree = "<group>"; };
+		CE9E54961853644A00FBBD6D /* JLAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAFHTTPClient.m; sourceTree = "<group>"; };
+		CE9E54971853644A00FBBD6D /* JLNimbusTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTableModel.h; sourceTree = "<group>"; };
+		CE9E54981853644A00FBBD6D /* JLNimbusTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusTableModel.m; sourceTree = "<group>"; };
+		CE9E549A1853644A00FBBD6D /* JLNimbusMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusMoreButton.h; sourceTree = "<group>"; };
+		CE9E549B1853644A00FBBD6D /* JLNimbusMoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusMoreButton.m; sourceTree = "<group>"; };
 		CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -217,8 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				CE5223B4184F645B00414BC6 /* Screenshots */,
-				28B375E018473A90009C69EE /* NimbusTimelineDemo-Info.plist */,
-				28B375E118473A90009C69EE /* NimbusTimelineDemo-Prefix.pch */,
+				28B375E018473A90009C69EE /* JLNimbusTimelineDemo-Info.plist */,
+				28B375E118473A90009C69EE /* JLNimbusTimelineDemo-Prefix.pch */,
 				28B375DC18473A90009C69EE /* main.m */,
 				28B375D218473A90009C69EE /* Default-568h@2x.png */,
 				28B375D318473A90009C69EE /* Default.png */,
@@ -228,26 +228,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		28B375FC18473AE6009C69EE /* NimbusTimeline */ = {
-			isa = PBXGroup;
-			children = (
-				CE1150991852A26E00A7E960 /* JLNimbusTimeline.h */,
-				CE9E545B18535F2D00FBBD6D /* 320Categories */,
-				CE1150A31852AF8100A7E960 /* Models */,
-				CE1150A81852AF8100A7E960 /* Views */,
-				CE11509D1852AF8100A7E960 /* Controllers */,
-				CE1150A21852AF8100A7E960 /* Entities */,
-			);
-			path = NimbusTimeline;
-			sourceTree = "<group>";
-		};
 		28B4756C1820EFC20044DF59 = {
 			isa = PBXGroup;
 			children = (
 				28121F1D1822655E00837E25 /* TODO */,
 				28121F1B1822654C00837E25 /* README.md */,
-				28AE79F51851BA580062B14B /* NimbusTimeline.podspec */,
-				28B375FC18473AE6009C69EE /* NimbusTimeline */,
+				CE9E54771853640500FBBD6D /* JLNimbusTimeline.podspec */,
+				CE9E54791853644A00FBBD6D /* JLNimbusTimeline */,
 				28B375C118473A90009C69EE /* NimbusTimelineDemo */,
 				28B475771820EFC30044DF59 /* Frameworks */,
 				28B475761820EFC30044DF59 /* Products */,
@@ -258,7 +245,7 @@
 		28B475761820EFC30044DF59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28B475751820EFC30044DF59 /* NimbusTimelineDemo.app */,
+				28B475751820EFC30044DF59 /* JLNimbusTimelineDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,44 +262,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE11509D1852AF8100A7E960 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE1150A01852AF8100A7E960 /* JLNimbusTableViewController.h */,
-				CE1150A11852AF8100A7E960 /* JLNimbusTableViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		CE1150A21852AF8100A7E960 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				CE1150B01852AFC200A7E960 /* JLNimbusEntity.h */,
-				CE1150B11852AFC200A7E960 /* JLNimbusEntity.m */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		CE1150A31852AF8100A7E960 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CE1150A41852AF8100A7E960 /* JLAFHTTPClient.h */,
-				CE1150A51852AF8100A7E960 /* JLAFHTTPClient.m */,
-				CE1150A61852AF8100A7E960 /* JLNimbusTableModel.h */,
-				CE1150A71852AF8100A7E960 /* JLNimbusTableModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CE1150A81852AF8100A7E960 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CE1150A91852AF8100A7E960 /* JLNimbusMoreButton.h */,
-				CE1150AA1852AF8100A7E960 /* JLNimbusMoreButton.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		CE5223B4184F645B00414BC6 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,37 +272,88 @@
 			path = Screenshot;
 			sourceTree = "<group>";
 		};
-		CE9E545B18535F2D00FBBD6D /* 320Categories */ = {
+		CE9E54791853644A00FBBD6D /* JLNimbusTimeline */ = {
 			isa = PBXGroup;
 			children = (
-				CE9E545C18535F2D00FBBD6D /* NSDataAdditions.h */,
-				CE9E545D18535F2D00FBBD6D /* NSDataAdditions.m */,
-				CE9E545E18535F2D00FBBD6D /* NSDateAdditions.h */,
-				CE9E545F18535F2D00FBBD6D /* NSDateAdditions.m */,
-				CE9E546018535F2D00FBBD6D /* NSStringAdditions.h */,
-				CE9E546118535F2D00FBBD6D /* NSStringAdditions.m */,
-				CE9E546218535F2D00FBBD6D /* Three20.bundle */,
-				CE9E546318535F2D00FBBD6D /* TTCorePreprocessorMacros.h */,
-				CE9E546418535F2D00FBBD6D /* TTGlobalCoreLocale.h */,
-				CE9E546518535F2D00FBBD6D /* TTGlobalCoreLocale.m */,
-				CE9E546618535F2D00FBBD6D /* TTGlobalUICommon.h */,
-				CE9E546718535F2D00FBBD6D /* TTGlobalUICommon.m */,
-				CE9E546818535F2D00FBBD6D /* UIFontAdditions.h */,
-				CE9E546918535F2D00FBBD6D /* UIFontAdditions.m */,
-				CE9E546A18535F2D00FBBD6D /* UIViewAdditions.h */,
-				CE9E546B18535F2D00FBBD6D /* UIViewAdditions.m */,
-				CE9E546C18535F2D00FBBD6D /* UIWindowAdditions.h */,
-				CE9E546D18535F2D00FBBD6D /* UIWindowAdditions.m */,
+				CE9E547A1853644A00FBBD6D /* 320Categories */,
+				CE9E548D1853644A00FBBD6D /* Controllers */,
+				CE9E54901853644A00FBBD6D /* Entities */,
+				CE9E54931853644A00FBBD6D /* JLNimbusTimeline.h */,
+				CE9E54941853644A00FBBD6D /* Models */,
+				CE9E54991853644A00FBBD6D /* Views */,
+			);
+			path = JLNimbusTimeline;
+			sourceTree = "<group>";
+		};
+		CE9E547A1853644A00FBBD6D /* 320Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E547B1853644A00FBBD6D /* NSDataAdditions.h */,
+				CE9E547C1853644A00FBBD6D /* NSDataAdditions.m */,
+				CE9E547D1853644A00FBBD6D /* NSDateAdditions.h */,
+				CE9E547E1853644A00FBBD6D /* NSDateAdditions.m */,
+				CE9E547F1853644A00FBBD6D /* NSStringAdditions.h */,
+				CE9E54801853644A00FBBD6D /* NSStringAdditions.m */,
+				CE9E54811853644A00FBBD6D /* Three20.bundle */,
+				CE9E54821853644A00FBBD6D /* TTCorePreprocessorMacros.h */,
+				CE9E54831853644A00FBBD6D /* TTGlobalCoreLocale.h */,
+				CE9E54841853644A00FBBD6D /* TTGlobalCoreLocale.m */,
+				CE9E54851853644A00FBBD6D /* TTGlobalUICommon.h */,
+				CE9E54861853644A00FBBD6D /* TTGlobalUICommon.m */,
+				CE9E54871853644A00FBBD6D /* UIFontAdditions.h */,
+				CE9E54881853644A00FBBD6D /* UIFontAdditions.m */,
+				CE9E54891853644A00FBBD6D /* UIViewAdditions.h */,
+				CE9E548A1853644A00FBBD6D /* UIViewAdditions.m */,
+				CE9E548B1853644A00FBBD6D /* UIWindowAdditions.h */,
+				CE9E548C1853644A00FBBD6D /* UIWindowAdditions.m */,
 			);
 			path = 320Categories;
+			sourceTree = "<group>";
+		};
+		CE9E548D1853644A00FBBD6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E548E1853644A00FBBD6D /* JLNimbusTableViewController.h */,
+				CE9E548F1853644A00FBBD6D /* JLNimbusTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE9E54901853644A00FBBD6D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E54911853644A00FBBD6D /* JLNimbusEntity.h */,
+				CE9E54921853644A00FBBD6D /* JLNimbusEntity.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CE9E54941853644A00FBBD6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E54951853644A00FBBD6D /* JLAFHTTPClient.h */,
+				CE9E54961853644A00FBBD6D /* JLAFHTTPClient.m */,
+				CE9E54971853644A00FBBD6D /* JLNimbusTableModel.h */,
+				CE9E54981853644A00FBBD6D /* JLNimbusTableModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE9E54991853644A00FBBD6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E549A1853644A00FBBD6D /* JLNimbusMoreButton.h */,
+				CE9E549B1853644A00FBBD6D /* JLNimbusMoreButton.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28B475741820EFC30044DF59 /* NimbusTimelineDemo */ = {
+		28B475741820EFC30044DF59 /* JLNimbusTimelineDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28B475981820EFC30044DF59 /* Build configuration list for PBXNativeTarget "NimbusTimelineDemo" */;
+			buildConfigurationList = 28B475981820EFC30044DF59 /* Build configuration list for PBXNativeTarget "JLNimbusTimelineDemo" */;
 			buildPhases = (
 				99F971B4003F40CB84714AAA /* Check Pods Manifest.lock */,
 				28B475711820EFC30044DF59 /* Sources */,
@@ -365,9 +365,9 @@
 			);
 			dependencies = (
 			);
-			name = NimbusTimelineDemo;
+			name = JLNimbusTimelineDemo;
 			productName = VideoOnline;
-			productReference = 28B475751820EFC30044DF59 /* NimbusTimelineDemo.app */;
+			productReference = 28B475751820EFC30044DF59 /* JLNimbusTimelineDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +380,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = SuperMaxDev;
 			};
-			buildConfigurationList = 28B475701820EFC20044DF59 /* Build configuration list for PBXProject "NimbusTimelineDemo" */;
+			buildConfigurationList = 28B475701820EFC20044DF59 /* Build configuration list for PBXProject "JLNimbusTimelineDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -392,7 +392,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28B475741820EFC30044DF59 /* NimbusTimelineDemo */,
+				28B475741820EFC30044DF59 /* JLNimbusTimelineDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -403,11 +403,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5223B6184F645B00414BC6 /* screenshot.jpg in Resources */,
-				CE9E547118535F2D00FBBD6D /* Three20.bundle in Resources */,
-				28AE79F61851BA590062B14B /* NimbusTimeline.podspec in Resources */,
 				28B375F218473A90009C69EE /* InfoPlist.strings in Resources */,
 				28B375F018473A90009C69EE /* Default.png in Resources */,
 				28121F1C1822654C00837E25 /* README.md in Resources */,
+				CE9E549F1853644A00FBBD6D /* Three20.bundle in Resources */,
+				CE9E54781853640500FBBD6D /* JLNimbusTimeline.podspec in Resources */,
 				28121F1E1822655E00837E25 /* TODO in Resources */,
 				28B375EF18473A90009C69EE /* Default-568h@2x.png in Resources */,
 				28B375F118473A90009C69EE /* Default@2x.png in Resources */,
@@ -455,30 +455,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1150AC1852AF8100A7E960 /* JLNimbusTableViewController.m in Sources */,
-				CE1150AD1852AF8100A7E960 /* JLAFHTTPClient.m in Sources */,
 				28B3760B18473DFF009C69EE /* SMUserInfoEntity.m in Sources */,
-				CE9E547618535F2D00FBBD6D /* UIWindowAdditions.m in Sources */,
-				CE9E547518535F2D00FBBD6D /* UIViewAdditions.m in Sources */,
-				CE9E547018535F2D00FBBD6D /* NSStringAdditions.m in Sources */,
+				CE9E54A71853644A00FBBD6D /* JLAFHTTPClient.m in Sources */,
+				CE9E54A41853644A00FBBD6D /* UIWindowAdditions.m in Sources */,
 				28B375F818473A90009C69EE /* SMGlobalConfig.m in Sources */,
-				CE9E547218535F2D00FBBD6D /* TTGlobalCoreLocale.m in Sources */,
+				CE9E54A31853644A00FBBD6D /* UIViewAdditions.m in Sources */,
+				CE9E54A01853644A00FBBD6D /* TTGlobalCoreLocale.m in Sources */,
 				28B375FA18473A90009C69EE /* SMStatusCell.m in Sources */,
-				CE9E546E18535F2D00FBBD6D /* NSDataAdditions.m in Sources */,
 				28B375EB18473A90009C69EE /* NSString+StringValue.m in Sources */,
+				CE9E54A81853644A00FBBD6D /* JLNimbusTableModel.m in Sources */,
+				CE9E54A61853644A00FBBD6D /* JLNimbusEntity.m in Sources */,
+				CE9E54A91853644A00FBBD6D /* JLNimbusMoreButton.m in Sources */,
 				28B375EA18473A90009C69EE /* NSDate+formatDateFromString.m in Sources */,
-				CE1150AE1852AF8100A7E960 /* JLNimbusTableModel.m in Sources */,
-				CE1150AF1852AF8100A7E960 /* JLNimbusMoreButton.m in Sources */,
+				CE9E549E1853644A00FBBD6D /* NSStringAdditions.m in Sources */,
+				CE9E549D1853644A00FBBD6D /* NSDateAdditions.m in Sources */,
 				28B375EE18473A90009C69EE /* SMPublicTimlineListC.m in Sources */,
-				CE9E547318535F2D00FBBD6D /* TTGlobalUICommon.m in Sources */,
+				CE9E54A51853644A00FBBD6D /* JLNimbusTableViewController.m in Sources */,
+				CE9E549C1853644A00FBBD6D /* NSDataAdditions.m in Sources */,
 				287DBC8C18488366002BF4A5 /* SMAPIClient.m in Sources */,
+				CE9E54A21853644A00FBBD6D /* UIFontAdditions.m in Sources */,
 				28B375E918473A90009C69EE /* AppDelegate.m in Sources */,
 				28B375F618473A90009C69EE /* SMPageTimelineModel.m in Sources */,
-				CE9E546F18535F2D00FBBD6D /* NSDateAdditions.m in Sources */,
-				CE9E547418535F2D00FBBD6D /* UIFontAdditions.m in Sources */,
+				CE9E54A11853644A00FBBD6D /* TTGlobalUICommon.m in Sources */,
 				28B375F418473A90009C69EE /* SMStatusEntity.m in Sources */,
 				28B375F518473A90009C69EE /* main.m in Sources */,
-				CE1150B21852AFC200A7E960 /* JLNimbusEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,11 +557,11 @@
 			baseConfigurationReference = B466FEF4A8494C228DF493F0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NimbusTimelineDemo/NimbusTimelineDemo-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/NimbusTimelineDemo/NimbusTimelineDemo-Info.plist";
+				GCC_PREFIX_HEADER = "NimbusTimelineDemo/JLNimbusTimelineDemo-Prefix.pch";
+				INFOPLIST_FILE = "NimbusTimelineDemo/JLNimbusTimelineDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = NimbusTimelineDemo;
+				PRODUCT_NAME = JLNimbusTimelineDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -572,11 +572,11 @@
 			baseConfigurationReference = B466FEF4A8494C228DF493F0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NimbusTimelineDemo/NimbusTimelineDemo-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/NimbusTimelineDemo/NimbusTimelineDemo-Info.plist";
+				GCC_PREFIX_HEADER = "NimbusTimelineDemo/JLNimbusTimelineDemo-Prefix.pch";
+				INFOPLIST_FILE = "NimbusTimelineDemo/JLNimbusTimelineDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = NimbusTimelineDemo;
+				PRODUCT_NAME = JLNimbusTimelineDemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -585,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28B475701820EFC20044DF59 /* Build configuration list for PBXProject "NimbusTimelineDemo" */ = {
+		28B475701820EFC20044DF59 /* Build configuration list for PBXProject "JLNimbusTimelineDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28B475961820EFC30044DF59 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28B475981820EFC30044DF59 /* Build configuration list for PBXNativeTarget "NimbusTimelineDemo" */ = {
+		28B475981820EFC30044DF59 /* Build configuration list for PBXNativeTarget "JLNimbusTimelineDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28B475991820EFC30044DF59 /* Debug */,
