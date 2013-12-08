@@ -58,7 +58,7 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSArray*)getListData:(NSDictionary*)dic
+- (NSArray*)getListDataFromRootDictionary:(NSDictionary*)dic
 {
 	return [dic objectForKey:[self listKey]];
 }
@@ -156,7 +156,7 @@
     NSArray* entities = nil;
     if ([responseObject isKindOfClass:[NSDictionary class]]) {
         NSDictionary* rootDictionary = (NSDictionary*)responseObject;
-        NSArray* listDataArray = [self getListData:rootDictionary];
+        NSArray* listDataArray = [self getListDataFromRootDictionary:rootDictionary];
         entities = [self entitiesParsedFromListData:listDataArray];
         self.hasMoreData = (entities.count >= self.perpageCount) ? YES : NO;
     }
