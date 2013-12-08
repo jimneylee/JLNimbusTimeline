@@ -19,5 +19,6 @@
 - (Class)cellClass;
 - (void)loadDataWithBlock:(void(^)(NSArray* items, NSError *error))block
                      more:(BOOL)more refresh:(BOOL)refresh;
+- (NSArray*)entitiesParsedFromListData:(NSArray*)listDataArray;
 
 @end
