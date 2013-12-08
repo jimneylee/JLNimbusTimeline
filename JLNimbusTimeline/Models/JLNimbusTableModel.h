@@ -21,5 +21,6 @@
                      more:(BOOL)more refresh:(BOOL)refresh;
 - (NSArray*)getListDataFromRootDictionary:(NSDictionary*)dic;
 - (NSArray*)entitiesParsedFromListData:(NSArray*)listDataArray;
+- (NSArray*)entitiesParsedFromResponseObject:(id)responseObject;
 
 @end
