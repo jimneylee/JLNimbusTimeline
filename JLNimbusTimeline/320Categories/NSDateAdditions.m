@@ -43,7 +43,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
     [dateFormatter setDateFormat:@"EEE MMM dd HH:mm:ss '+0800' yyyy"];
-    return [dateFormatter dateFromString:str];
+    return [dateFormatter dateFromString:string];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
