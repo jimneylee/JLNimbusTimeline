@@ -15,6 +15,10 @@
 #define PERPAGE_COUNT 20
 #define PAGE_START_INDEX 1
 
+@interface JLNimbusTableModel()
+@property (nonatomic, assign) BOOL isLoading;
+@end
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -95,6 +99,12 @@
 - (void)loadDataWithBlock:(void(^)(NSArray* indexPaths, NSError *error))block
                      more:(BOOL)more refresh:(BOOL)refresh
 {
+    if (self.isLoading) {
+        return;
+    }
+    else {
+        self.isLoading = YES;
+    }
     if (more) {
         self.pageCounter++;
     }
@@ -105,6 +115,7 @@
     if ([[self apiSharedClient] respondsToSelector:@selector(getPath:parameters:refresh:success:failure:)]) {
         [[self apiSharedClient] getPath:relativePath parameters:[self generateParameters]  refresh:refresh
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                    self.isLoading = NO;
                                     if (!more) {
                                         if (self.sections.count > 0) {
                                             [self removeSectionAtIndex:0];
@@ -123,10 +134,14 @@
                                         block(indexPaths, nil);
                                     }
                                 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                    self.isLoading = NO;
                                     if (block) {
                                         block(nil, error);
                                     }
                                 }];
+    }
+    else {
+        self.isLoading = NO;
     }
 }
 
