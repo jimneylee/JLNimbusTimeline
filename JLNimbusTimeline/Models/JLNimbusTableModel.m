@@ -137,7 +137,7 @@
                                 }];
     }
     else {
-        self.isLoading = NO;
+        NSLog(@"Error: can not find method (getPath:parameters:refresh:success:failure:)");
     }
 }
 
