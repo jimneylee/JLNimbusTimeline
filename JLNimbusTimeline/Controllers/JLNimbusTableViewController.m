@@ -89,9 +89,9 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewWillDisappear:animated];
     if (self.model.isLoading) {
         [self.model cancelRequstOperation];
     }
