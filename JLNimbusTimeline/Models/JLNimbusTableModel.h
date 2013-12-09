@@ -11,16 +11,20 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @interface JLNimbusTableModel : NIMutableTableViewModel
 
+@property (nonatomic, assign) BOOL isLoading;
 @property (nonatomic, assign) BOOL hasMoreData;
 @property (nonatomic, assign) NSInteger pageCounter;
 @property (nonatomic, assign) NSInteger perpageCount;
 
 - (Class)objectClass;
 - (Class)cellClass;
+
 - (void)loadDataWithBlock:(void(^)(NSArray* items, NSError *error))block
                      more:(BOOL)more refresh:(BOOL)refresh;
+- (void)cancelRequstOperation;
+
+- (NSArray*)entitiesParsedFromResponseObject:(id)responseObject;
 - (NSArray*)getListDataFromRootDictionary:(NSDictionary*)dic;
 - (NSArray*)entitiesParsedFromListData:(NSArray*)listDataArray;
-- (NSArray*)entitiesParsedFromResponseObject:(id)responseObject;
 
 @end
