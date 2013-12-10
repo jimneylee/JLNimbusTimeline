@@ -11,15 +11,25 @@
 @implementation JLNimbusEntity
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.cellStyle = UITableViewCellStyleSubtitle;
+    }
+    return self;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithDictionary:(NSDictionary*)dic
 {
     if (!dic || ![dic isKindOfClass:[NSDictionary class]]) {
         return nil;
     }
     
-    self = [super init];
+    self = [self init];
     if (self) {
-        self.cellStyle = UITableViewCellStyleSubtitle;
+        
     }
     return self;
 }
