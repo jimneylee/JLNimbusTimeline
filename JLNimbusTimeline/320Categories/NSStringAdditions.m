@@ -64,7 +64,7 @@
 - (NSDictionary*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding {
   NSCharacterSet* delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&;"];
   NSMutableDictionary* pairs = [NSMutableDictionary dictionary];
-  NSScanner* scanner = [[[NSScanner alloc] initWithString:self] autorelease];
+  NSScanner* scanner = [[NSScanner alloc] initWithString:self];
   while (![scanner isAtEnd]) {
     NSString* pairString = nil;
     [scanner scanUpToCharactersFromSet:delimiterSet intoString:&pairString];
@@ -86,7 +86,7 @@
 - (NSDictionary*)queryContentsUsingEncoding:(NSStringEncoding)encoding {
   NSCharacterSet* delimiterSet = [NSCharacterSet characterSetWithCharactersInString:@"&;"];
   NSMutableDictionary* pairs = [NSMutableDictionary dictionary];
-  NSScanner* scanner = [[[NSScanner alloc] initWithString:self] autorelease];
+  NSScanner* scanner = [[NSScanner alloc] initWithString:self];
   while (![scanner isAtEnd]) {
     NSString* pairString = nil;
     [scanner scanUpToCharactersFromSet:delimiterSet intoString:&pairString];
@@ -137,7 +137,7 @@
 - (NSString*)stringByAddingURLEncodedQueryDictionary:(NSDictionary*)query {
   NSMutableDictionary* encodedQuery = [NSMutableDictionary dictionaryWithCapacity:[query count]];
 
-  for (NSString* key in [query keyEnumerator]) {
+  for (__strong NSString* key in [query keyEnumerator]) {
     NSParameterAssert([key respondsToSelector:@selector(urlEncoded)]);
     NSString* value = [query objectForKey:key];
     NSParameterAssert([value respondsToSelector:@selector(urlEncoded)]);
@@ -156,8 +156,8 @@
                                             (CFStringRef)@"!#$%&'()*+,/:;=?@[]",
                                             kCFStringEncodingUTF8);
 
-  NSString *urlEncoded = [NSString stringWithString:(NSString *)cfUrlEncodedString];
-  CFRelease(cfUrlEncodedString);
+  NSString *urlEncoded = [NSString stringWithString:(__bridge NSString *)cfUrlEncodedString];
+  //CFRelease(cfUrlEncodedString);
   return urlEncoded;
 }
 

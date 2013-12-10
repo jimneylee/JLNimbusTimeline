@@ -65,7 +65,6 @@
                                (NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit)
                                            fromDate:[NSDate date]];
 	NSDate *midnight = [gregorian dateFromComponents:comps];
-	[gregorian release];
 	return midnight;
 }
 

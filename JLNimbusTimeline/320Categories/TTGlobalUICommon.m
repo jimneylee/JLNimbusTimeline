@@ -274,20 +274,20 @@ CGFloat TTGroupedTableCellInset() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 void TTAlert(NSString* message) {
-  UIAlertView* alert = [[[UIAlertView alloc] initWithTitle:TTLocalizedString(@"Alert", @"")
+  UIAlertView* alert = [[UIAlertView alloc] initWithTitle:TTLocalizedString(@"Alert", @"")
                                              message:message delegate:nil
                                              cancelButtonTitle:TTLocalizedString(@"OK", @"")
-                                             otherButtonTitles:nil] autorelease];
+                                             otherButtonTitles:nil];
   [alert show];
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 void TTAlertNoTitle(NSString* message) {
-  UIAlertView* alert = [[[UIAlertView alloc] initWithTitle:nil
+  UIAlertView* alert = [[UIAlertView alloc] initWithTitle:nil
                                                    message:message
                                                   delegate:nil
                                          cancelButtonTitle:TTLocalizedString(@"OK", @"")
-                                         otherButtonTitles:nil] autorelease];
+                                         otherButtonTitles:nil];
   [alert show];
 }
