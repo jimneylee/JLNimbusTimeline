@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NICellFactory* cellFactory;
 
 - (void)autoPullDownRefreshActionAnimation;
+- (void)refreshData:(BOOL)refresh;
 - (void)didBeginLoadData;
 - (void)didFinishLoadData;
 - (void)didFailLoadData;

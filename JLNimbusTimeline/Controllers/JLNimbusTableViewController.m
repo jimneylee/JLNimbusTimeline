@@ -180,28 +180,25 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)refreshData:(BOOL)refresh
 {
-    if (self.refreshControl.refreshing) {
-        [self didBeginLoadData];
-        [self.model loadDataWithBlock:^(NSArray* indexPaths, NSError* error) {
-            if (indexPaths) {
-                if (indexPaths.count) {
-                    [self.tableView reloadData];
-                }
-                else {
-                    [self showMessageForEmpty];
-                }
-                
-                [self didFinishLoadData];
+    [self didBeginLoadData];
+    [self.model loadDataWithBlock:^(NSArray* indexPaths, NSError* error) {
+        if (indexPaths) {
+            if (indexPaths.count) {
+                [self.tableView reloadData];
             }
             else {
-                [self showMessageForError];
-                [self didFailLoadData];
+                [self showMessageForEmpty];
             }
-            [self.refreshControl endRefreshing];
-            self.autoPullDownLoading = NO;
-            [self finishLoadingAnimation];
-        } more:NO refresh:refresh];
-    }
+            
+            [self didFinishLoadData];
+        }
+        else {
+            [self showMessageForError];
+            [self didFailLoadData];
+        }
+        self.autoPullDownLoading = NO;
+        [self finishLoadingAnimation];
+    } more:NO refresh:refresh];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -287,6 +284,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)didFinishLoadData
 {
+    [self.refreshControl endRefreshing];
     if (self.model.hasMoreData) {
         if (!self.loadMoreFooterView ) {
             [self createLoadMoreFooterView];
@@ -303,7 +301,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)didFailLoadData
 {
-    
+    [self.refreshControl endRefreshing];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
