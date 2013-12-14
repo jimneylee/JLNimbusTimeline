@@ -7,16 +7,20 @@
 //
 
 #import "JLNimbusTableModel.h"
+#import "JLNimbusMoreButton.h"
 
 @interface JLNimbusTableViewController : UITableViewController
 
 @property (nonatomic, assign) NITableViewActionBlock tapAction;
 @property (nonatomic, strong) JLNimbusTableModel* model;
 @property (nonatomic, strong) NITableViewActions* actions;
-@property (nonatomic, strong) NICellFactory* cellFactory;
+@property (nonatomic, strong) JLNimbusMoreButton* loadMoreFooterView;;
 
 - (void)autoPullDownRefreshActionAnimation;
 - (void)refreshData:(BOOL)refresh;
+- (void)loadMoreAction;
+- (void)reloadWithIndexPaths:(NSArray*)indexPaths;
+- (void)loadMoreWithIndexPaths:(NSArray*)indexPaths;
 - (void)didBeginLoadData;
 - (void)didFinishLoadData;
 - (void)didFailLoadData;

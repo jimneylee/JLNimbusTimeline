@@ -7,7 +7,6 @@
 //
 
 #import "JLNimbusTableViewController.h"
-#import "JLNimbusMoreButton.h"
 #import "UIViewAdditions.h"
 
 #ifndef IOS_IS_AT_LEAST_7
@@ -22,8 +21,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @interface JLNimbusTableViewController ()
-@property (nonatomic, strong) JLNimbusMoreButton* loadMoreFooterView;
 @property (nonatomic, assign) BOOL autoPullDownLoading;
+@property (nonatomic, strong) NICellFactory* cellFactory;
 @end
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -122,6 +121,13 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)loadMoreAction
+{
+    [self loadMoreData];
+    [self.loadMoreFooterView setAnimating:YES];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)showMessageForEmpty
 {
 }
@@ -171,20 +177,13 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)loadMoreAction
-{
-    [self loadMoreData];
-    [self.loadMoreFooterView setAnimating:YES];
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)refreshData:(BOOL)refresh
 {
     [self didBeginLoadData];
     [self.model loadDataWithBlock:^(NSArray* indexPaths, NSError* error) {
         if (indexPaths) {
             if (indexPaths.count) {
-                [self.tableView reloadData];
+                [self reloadWithIndexPaths:indexPaths];
             }
             else {
                 [self showMessageForEmpty];
@@ -206,7 +205,7 @@
 {
     [self.model loadDataWithBlock:^(NSArray* indexPaths, NSError* error) {
         if (indexPaths.count) {
-            [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self loadMoreWithIndexPaths:indexPaths];
             [self didFinishLoadData];
         }
         else {
@@ -255,6 +254,18 @@
                             self.tableView.contentOffset = CGPointMake(0.f, height);
                             [self.refreshControl endRefreshing];
                         } completion:NULL];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)reloadWithIndexPaths:(NSArray*)indexPaths
+{
+    [self.tableView reloadData];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)loadMoreWithIndexPaths:(NSArray*)indexPaths
+{
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
