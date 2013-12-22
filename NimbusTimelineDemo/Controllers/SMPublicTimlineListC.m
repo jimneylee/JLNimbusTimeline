@@ -11,7 +11,7 @@
 #import "SMPageTimelineModel.h"
 
 @interface SMPublicTimlineListC ()
-@property (nonatomic, assign) NITableViewActionBlock tapAction;
+@property (nonatomic, assign) NIActionBlock tapAction;
 @end
 
 @implementation SMPublicTimlineListC
@@ -65,9 +65,9 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NITableViewActionBlock)tapAction
+- (NIActionBlock)tapAction
 {
-    return ^BOOL(id object, id target) {
+    return ^BOOL(id object, id target, NSIndexPath* indexPath) {
         if (!self.editing) {
             if ([object isKindOfClass:[SMStatusEntity class]]) {
                 SMStatusEntity* status = (SMStatusEntity*)object;
