@@ -1,13 +1,68 @@
 PODS:
   - AFNetworking (1.3.3)
+  - JSONKit (1.5pre)
   - MBProgressHUD (0.8)
+  - Nimbus (1.0.0):
+    - Nimbus/AttributedLabel
+    - Nimbus/Badge
+    - Nimbus/Collections
+    - Nimbus/Core
+    - Nimbus/CSS
+    - Nimbus/Interapp
+    - Nimbus/Launcher
+    - Nimbus/Models
+    - Nimbus/NetworkControllers
+    - Nimbus/NetworkImage
+    - Nimbus/Operations
+    - Nimbus/Overview
+    - Nimbus/PagingScrollView
+    - Nimbus/Photos
+    - Nimbus/WebController
+  - Nimbus/AttributedLabel (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Badge (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Collections (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Core (1.0.0)
+  - Nimbus/CSS (1.0.0):
+    - AFNetworking (~> 1.0)
+    - Nimbus/Core
+  - Nimbus/Interapp (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Launcher (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Models (1.0.0):
+    - Nimbus/Core
+  - Nimbus/NetworkControllers (1.0.0):
+    - Nimbus/Core
+  - Nimbus/NetworkImage (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Operations (1.0.0):
+    - Nimbus/Core
+    - Nimbus/Operations/JSON
+  - Nimbus/Operations/JSON (1.0.0):
+    - JSONKit
+    - Nimbus/Core
+  - Nimbus/Overview (1.0.0):
+    - Nimbus/Core
+  - Nimbus/PagingScrollView (1.0.0):
+    - Nimbus/Core
+  - Nimbus/Photos (1.0.0):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/WebController (1.0.0):
+    - Nimbus/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 1.3.3)
   - MBProgressHUD
+  - Nimbus
 
 SPEC CHECKSUMS:
   AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
+  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  Nimbus: 01c4339214b2f35be2e9284cb6e98beb7fe0f08a
 
-COCOAPODS: 0.27.1
+COCOAPODS: 0.23.0

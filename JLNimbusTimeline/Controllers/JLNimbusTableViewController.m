@@ -273,9 +273,9 @@
 #pragma mark - Override
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NIActionBlock)tapAction
+- (NITableViewActionBlock)tapAction
 {
-    return ^BOOL(id object, id target, NSIndexPath* indexPath) {
+    return ^BOOL(id object, id target) {
         return YES;
     };
 }

@@ -11,7 +11,7 @@
 
 @interface JLNimbusTableViewController : UITableViewController
 
-@property (nonatomic, assign) NIActionBlock tapAction;
+@property (nonatomic, assign) NITableViewActionBlock tapAction;
 @property (nonatomic, strong) JLNimbusTableModel* model;
 @property (nonatomic, strong) NITableViewActions* actions;
 @property (nonatomic, strong) JLNimbusMoreButton* loadMoreFooterView;;
