@@ -49,6 +49,7 @@
         _model = [[[self tableModelClass] alloc] initWithDelegate:_cellFactory];
         _actions = [[NITableViewActions alloc] initWithTarget:self];
         [self.actions attachToClass:[self.model objectClass] tapBlock:self.tapAction];
+        self.isCacheFirstLoad = YES;
     }
     return self;
 }
@@ -76,8 +77,14 @@
     self.tableView.dataSource = self.model;
     self.tableView.delegate = [self.actions forwardingTo:self];
     
-    [self performSelector:@selector(autoPullDownReloadActionAnimaton)
-               withObject:nil afterDelay:DEFAULT_DELAY_PULL_DOWN_RELOAD_DURATION];
+    if (self.isCacheFirstLoad) {
+        [self performSelector:@selector(autoPullDownReloadActionAnimaton)
+                   withObject:nil afterDelay:DEFAULT_DELAY_PULL_DOWN_RELOAD_DURATION];
+    }
+    else {
+        [self performSelector:@selector(autoPullDownRefreshActionAnimation)
+                   withObject:nil afterDelay:DEFAULT_DELAY_PULL_DOWN_RELOAD_DURATION];
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
