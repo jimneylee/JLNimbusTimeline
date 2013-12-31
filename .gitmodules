@@ -1,3 +1,0 @@
-[submodule "vendor/Nimbus"]
-	path = vendor/Nimbus
-	url = https://github.com/jverkoey/nimbus
