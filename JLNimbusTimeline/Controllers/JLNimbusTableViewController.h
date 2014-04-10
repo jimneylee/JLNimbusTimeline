@@ -17,7 +17,8 @@
 @property (nonatomic, assign) NITableViewActionBlock tapAction;
 @property (nonatomic, strong) JLNimbusMoreButton* loadMoreFooterView;;
 @property (nonatomic, assign) BOOL isCacheFirstLoad;
-           
+
+- (void)autoPullDownReloadActionAnimaton;
 - (void)autoPullDownRefreshActionAnimation;
 - (void)refreshData:(BOOL)refresh;
 - (void)loadMoreAction;
