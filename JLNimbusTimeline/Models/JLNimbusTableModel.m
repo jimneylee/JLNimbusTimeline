@@ -60,7 +60,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSArray*)getListDataFromRootDictionary:(NSDictionary*)dic
 {
-	return [dic objectForKey:[self listKey]];
+    id object = [dic objectForKey:[self listKey]];
+    if ([object isKindOfClass:[NSArray class]]) {
+        return object;
+    }
+	return [NSArray array];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
