@@ -21,13 +21,6 @@ $ git submodule add https://github.com/jimneylee/JLNimbusTimeline.git vendor/JLN
 ```
 # ARC Support
 
-# Try MacBuildServer Install
-<!-- MacBuildServer Install Button -->
-<div class="macbuildserver-block">
-    <a class="macbuildserver-button" href="http://macbuildserver.com/project/github/build/?xcode_project=NimbusTimelineDemo.xcworkspace&amp;target=NimbusTimelineDemo&amp;repo_url=git%3A%2F%2Fgithub.com%2Fjimneylee%2FNimbusTimeline.git&amp;build_conf=Release" target="_blank"><img src="http://com.macbuildserver.github.s3-website-us-east-1.amazonaws.com/button_up.png"/></a><br/><sup><a href="http://macbuildserver.com/" target="_blank">by MacBuildServer</a></sup>
-</div>
-<!-- MacBuildServer Install Button -->
-
 # Contact me
 
 Email: jimney@163.com 
