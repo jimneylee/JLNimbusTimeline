@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
+#import "AFNetworkActivityIndicatorManager.h"
 #import "SMPublicTimlineListC.h"
 
 @interface AppDelegate()
@@ -25,12 +26,12 @@
     
     // AFNetworking
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
-    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObjects:
-                                                       @"application/json",
-                                                       @"text/json",
-                                                       @"text/javascript",
-                                                       @"text/html",
-                                                       @"text/plain", nil]];
+//    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObjects:
+//                                                       @"application/json",
+//                                                       @"text/json",
+//                                                       @"text/javascript",
+//                                                       @"text/html",
+//                                                       @"text/plain", nil]];
 }
 
 - (void)appearanceChange

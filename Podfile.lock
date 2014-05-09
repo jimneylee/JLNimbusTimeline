@@ -1,10 +1,28 @@
 PODS:
-  - AFNetworking (1.3.3)
-  - JSONKit (1.5pre)
+  - AFNetworking (2.2.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.3):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.3)
+  - AFNetworking/Security (2.2.3)
+  - AFNetworking/Serialization (2.2.3)
+  - AFNetworking/UIKit (2.2.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - MBProgressHUD (0.8)
-  - Nimbus (1.0.0):
+  - Nimbus (1.2.0):
     - Nimbus/AttributedLabel
     - Nimbus/Badge
+    - Nimbus/Collections
     - Nimbus/Collections
     - Nimbus/Core
     - Nimbus/CSS
@@ -13,56 +31,55 @@ PODS:
     - Nimbus/Models
     - Nimbus/NetworkControllers
     - Nimbus/NetworkImage
-    - Nimbus/Operations
     - Nimbus/Overview
     - Nimbus/PagingScrollView
     - Nimbus/Photos
+    - Nimbus/Textfield
     - Nimbus/WebController
-  - Nimbus/AttributedLabel (1.0.0):
+  - Nimbus/AttributedLabel (1.2.0):
     - Nimbus/Core
-  - Nimbus/Badge (1.0.0):
+  - Nimbus/Badge (1.2.0):
     - Nimbus/Core
-  - Nimbus/Collections (1.0.0):
+  - Nimbus/Collections (1.2.0):
     - Nimbus/Core
-  - Nimbus/Core (1.0.0)
-  - Nimbus/CSS (1.0.0):
-    - AFNetworking (~> 1.0)
+  - Nimbus/Core (1.2.0)
+  - Nimbus/CSS (1.2.0):
+    - AFNetworking (~> 2.1)
     - Nimbus/Core
-  - Nimbus/Interapp (1.0.0):
+    - Nimbus/Textfield
+  - Nimbus/Interapp (1.2.0):
     - Nimbus/Core
-  - Nimbus/Launcher (1.0.0):
-    - Nimbus/Core
-  - Nimbus/Models (1.0.0):
-    - Nimbus/Core
-  - Nimbus/NetworkControllers (1.0.0):
-    - Nimbus/Core
-  - Nimbus/NetworkImage (1.0.0):
-    - Nimbus/Core
-  - Nimbus/Operations (1.0.0):
-    - Nimbus/Core
-    - Nimbus/Operations/JSON
-  - Nimbus/Operations/JSON (1.0.0):
-    - JSONKit
-    - Nimbus/Core
-  - Nimbus/Overview (1.0.0):
-    - Nimbus/Core
-  - Nimbus/PagingScrollView (1.0.0):
-    - Nimbus/Core
-  - Nimbus/Photos (1.0.0):
+  - Nimbus/Launcher (1.2.0):
     - Nimbus/Core
     - Nimbus/PagingScrollView
-  - Nimbus/WebController (1.0.0):
+  - Nimbus/Models (1.2.0):
+    - Nimbus/Core
+  - Nimbus/NetworkControllers (1.2.0):
+    - Nimbus/Core
+  - Nimbus/NetworkImage (1.2.0):
+    - AFNetworking (~> 2.1)
+    - Nimbus/Core
+  - Nimbus/Overview (1.2.0):
+    - Nimbus/Core
+    - Nimbus/Models
+  - Nimbus/PagingScrollView (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Photos (1.2.0):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/Textfield (1.2.0):
+    - Nimbus/Core
+  - Nimbus/WebController (1.2.0):
     - Nimbus/Core
 
 DEPENDENCIES:
-  - AFNetworking (~> 1.3.3)
+  - AFNetworking (~> 2.2.3)
   - MBProgressHUD
-  - Nimbus
+  - Nimbus (~> 1.2.0)
 
 SPEC CHECKSUMS:
-  AFNetworking: 61fdd49e2ffe6380378df37b3b6e70630bb9dd66
-  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
+  AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
-  Nimbus: 01c4339214b2f35be2e9284cb6e98beb7fe0f08a
+  Nimbus: bbde56c7e845d3c38c1f484018ef1bb3259c0507
 
-COCOAPODS: 0.23.0
+COCOAPODS: 0.32.1

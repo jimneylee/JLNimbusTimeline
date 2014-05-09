@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NICellFactory* cellFactory;
 @property (nonatomic, strong) JLNimbusTableModel* model;
 @property (nonatomic, strong) NITableViewActions* actions;
-@property (nonatomic, assign) NITableViewActionBlock tapAction;
+@property (nonatomic, assign) NIActionBlock tapAction;
 @property (nonatomic, strong) JLNimbusMoreButton* loadMoreFooterView;;
 @property (nonatomic, assign) BOOL isCacheFirstLoad;
 

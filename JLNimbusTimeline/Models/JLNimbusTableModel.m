@@ -9,7 +9,6 @@
 #import "JLNimbusTableModel.h"
 #import "NITableViewModel+Private.h"
 #import "NITableViewModel.h"
-#import "JLAFHTTPClient.h"
 #import "JLNimbusEntity.h"
 
 #define PERPAGE_COUNT 20
@@ -112,8 +111,8 @@
         self.pageCounter = PAGE_START_INDEX;
     }
     NSString* relativePath = [self relativePath];
-    if ([[self apiSharedClient] respondsToSelector:@selector(getPath:parameters:refresh:success:failure:)]) {
-        [[self apiSharedClient] getPath:relativePath parameters:[self generateParameters]  refresh:refresh
+    if ([[self apiSharedClient] respondsToSelector:@selector(GET:parameters:refresh:success:failure:)]) {
+        [[self apiSharedClient] GET:relativePath parameters:[self generateParameters]  refresh:refresh
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     self.isLoading = NO;
                                     if (!more) {
@@ -127,7 +126,7 @@
                                         indexPaths = [self addObjectsFromArray:entities];
                                     }
                                     else {
-                                        // just set empty array, show empty data but no error
+                                        // just set empty array if no data
                                         indexPaths = [NSArray array];
                                     }
                                     if (block) {
@@ -149,7 +148,7 @@
 - (void)cancelRequstOperation
 {
     if (self.isLoading) {
-        [[self apiSharedClient] cancelAllHTTPOperationsWithMethod:@"GET" path:[self relativePath]];
+        [[self apiSharedClient] cancelAllHTTPOperationsWithPath:[self relativePath]];
         self.isLoading = NO;
     }
 }

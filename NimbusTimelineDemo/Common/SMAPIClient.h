@@ -6,11 +6,11 @@
 //  Copyright (c) 2013年 jimneylee. All rights reserved.
 //
 
-#import "JLAFHTTPClient.h"
+#import "JLAFAPIBaseClient.h"
 
-@interface SMAPIClient : JLAFHTTPClient
+@interface SMAPIClient : JLAFAPIBaseClient
 
-+ (SMAPIClient*)sharedClient;
++ (SMAPIClient *)sharedClient;
 
 // public timeline
 + (NSString*)relativePathForPublicTimelineWithPageCounter:(NSInteger)pageCounter

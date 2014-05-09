@@ -42,7 +42,7 @@
 		CE9E54A41853644A00FBBD6D /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E548C1853644A00FBBD6D /* UIWindowAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE9E54A51853644A00FBBD6D /* JLNimbusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E548F1853644A00FBBD6D /* JLNimbusTableViewController.m */; };
 		CE9E54A61853644A00FBBD6D /* JLNimbusEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54921853644A00FBBD6D /* JLNimbusEntity.m */; };
-		CE9E54A71853644A00FBBD6D /* JLAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54961853644A00FBBD6D /* JLAFHTTPClient.m */; };
+		CE9E54A71853644A00FBBD6D /* JLAFAPIBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54961853644A00FBBD6D /* JLAFAPIBaseClient.m */; };
 		CE9E54A81853644A00FBBD6D /* JLNimbusTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E54981853644A00FBBD6D /* JLNimbusTableModel.m */; };
 		CE9E54A91853644A00FBBD6D /* JLNimbusMoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E549B1853644A00FBBD6D /* JLNimbusMoreButton.m */; };
 		CEE5261F1840DAD200BF18B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5261E1840DAD200BF18B6 /* QuartzCore.framework */; };
@@ -111,8 +111,8 @@
 		CE9E54911853644A00FBBD6D /* JLNimbusEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusEntity.h; sourceTree = "<group>"; };
 		CE9E54921853644A00FBBD6D /* JLNimbusEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusEntity.m; sourceTree = "<group>"; };
 		CE9E54931853644A00FBBD6D /* JLNimbusTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTimeline.h; sourceTree = "<group>"; };
-		CE9E54951853644A00FBBD6D /* JLAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAFHTTPClient.h; sourceTree = "<group>"; };
-		CE9E54961853644A00FBBD6D /* JLAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAFHTTPClient.m; sourceTree = "<group>"; };
+		CE9E54951853644A00FBBD6D /* JLAFAPIBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAFAPIBaseClient.h; sourceTree = "<group>"; };
+		CE9E54961853644A00FBBD6D /* JLAFAPIBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAFAPIBaseClient.m; sourceTree = "<group>"; };
 		CE9E54971853644A00FBBD6D /* JLNimbusTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusTableModel.h; sourceTree = "<group>"; };
 		CE9E54981853644A00FBBD6D /* JLNimbusTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNimbusTableModel.m; sourceTree = "<group>"; };
 		CE9E549A1853644A00FBBD6D /* JLNimbusMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNimbusMoreButton.h; sourceTree = "<group>"; };
@@ -275,10 +275,10 @@
 		CE9E54791853644A00FBBD6D /* JLNimbusTimeline */ = {
 			isa = PBXGroup;
 			children = (
+				CE9E54931853644A00FBBD6D /* JLNimbusTimeline.h */,
 				CE9E547A1853644A00FBBD6D /* 320Categories */,
 				CE9E548D1853644A00FBBD6D /* Controllers */,
 				CE9E54901853644A00FBBD6D /* Entities */,
-				CE9E54931853644A00FBBD6D /* JLNimbusTimeline.h */,
 				CE9E54941853644A00FBBD6D /* Models */,
 				CE9E54991853644A00FBBD6D /* Views */,
 			);
@@ -331,8 +331,8 @@
 		CE9E54941853644A00FBBD6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE9E54951853644A00FBBD6D /* JLAFHTTPClient.h */,
-				CE9E54961853644A00FBBD6D /* JLAFHTTPClient.m */,
+				CE9E54951853644A00FBBD6D /* JLAFAPIBaseClient.h */,
+				CE9E54961853644A00FBBD6D /* JLAFAPIBaseClient.m */,
 				CE9E54971853644A00FBBD6D /* JLNimbusTableModel.h */,
 				CE9E54981853644A00FBBD6D /* JLNimbusTableModel.m */,
 			);
@@ -456,7 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B3760B18473DFF009C69EE /* SMUserInfoEntity.m in Sources */,
-				CE9E54A71853644A00FBBD6D /* JLAFHTTPClient.m in Sources */,
+				CE9E54A71853644A00FBBD6D /* JLAFAPIBaseClient.m in Sources */,
 				CE9E54A41853644A00FBBD6D /* UIWindowAdditions.m in Sources */,
 				28B375F818473A90009C69EE /* SMGlobalConfig.m in Sources */,
 				CE9E54A31853644A00FBBD6D /* UIViewAdditions.m in Sources */,

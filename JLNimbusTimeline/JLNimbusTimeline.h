@@ -24,7 +24,7 @@
 #import "TTGlobalUICommon.h"
 
 // Timeline
-#import "JLAFHTTPClient.h"
+#import "JLAFAPIBaseClient.h"
 #import "JLNimbusTableViewController.h"
 #import "JLNimbusTableModel.h"
 #import "JLNimbusMoreButton.h"

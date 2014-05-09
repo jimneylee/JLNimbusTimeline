@@ -7,8 +7,6 @@
 //
 
 #import "SMAPIClient.h"
-#import "AFJSONRequestOperation.h"
-#import "AFImageRequestOperation.h"
 
 NSString *const kSMAPIBaseURLString = @"https://api.weibo.com/2/";
 
@@ -18,7 +16,7 @@ NSString *const kSMAPIBaseURLString = @"https://api.weibo.com/2/";
 @implementation SMAPIClient
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (SMAPIClient*)sharedClient
++ (SMAPIClient *)sharedClient
 {
     static SMAPIClient* _sharedClient = nil;
     static dispatch_once_t onceToken;
@@ -27,36 +25,6 @@ NSString *const kSMAPIBaseURLString = @"https://api.weibo.com/2/";
     });
     
     return _sharedClient;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (id)initWithBaseURL:(NSURL *)url
-{
-    self = [super initWithBaseURL:url];
-    if (!self) {
-        return nil;
-    }
-    
-    return self;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark - GET Request
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)getPath:(NSString *)path
-     parameters:(NSDictionary *)parameters
-        refresh:(BOOL)refresh
-        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
-{
-	NSMutableURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:parameters];
-    if (!refresh) {
-        [request setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
-    }
-    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:success failure:failure];
-    [self enqueueHTTPRequestOperation:operation];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
