@@ -14,10 +14,10 @@ use this later on
 
 ## As a submodule to your project
 
-Import *JLNimbusTimeline.h* file to your PCH file or your AppDelegate file.
+import *JLNimbusTimeline.h* file to your PCH file or your AppDelegate file.
 
 ``` bash
-$ git submodule add https://github.com/jimneylee/JLNimbusTimeline.git vendor/JLNimbusTimeline
+$ git submodule add https://github.com/jimneylee/JLNimbusTimeline.git Vendor/JLNimbusTimeline
 ```
 
 # License
