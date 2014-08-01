@@ -22,4 +22,7 @@
     // JLNimbusTimeline
     #import "JLNimbusTimeline.h"
 
+    // 320Categories
+    #import "TTCategoryHeader.h"
+
 #endif
