@@ -19,13 +19,6 @@ Import *JLNimbusTimeline.h* file to your PCH file or your AppDelegate file.
 ``` bash
 $ git submodule add https://github.com/jimneylee/JLNimbusTimeline.git vendor/JLNimbusTimeline
 ```
-# ARC Support
-
-# Contact me
-
-Email: jimney@163.com 
-
-Weibo: [@jimneylee](http://weibo.com/u/1831553040)
 
 # License
 
