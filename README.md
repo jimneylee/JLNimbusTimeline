@@ -17,6 +17,10 @@ use this later on
 import *JLNimbusTimeline.h* file to your PCH file or your AppDelegate file.
 
 ``` bash
+#import "JLNimbusTimeline.h"
+```
+
+``` bash
 $ git submodule add https://github.com/jimneylee/JLNimbusTimeline.git Vendor/JLNimbusTimeline
 ```
 
