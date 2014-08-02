@@ -110,9 +110,9 @@
 - (void)autoPullDownReloadActionAnimaton
 {
     if (!self.autoPullDownLoading) {
+        self.autoPullDownLoading = YES;
         [self pullDownLoadingAnimation];
         [self reloadAction];
-        self.autoPullDownLoading = YES;
     }
 }
 
@@ -120,9 +120,9 @@
 - (void)autoPullDownRefreshActionAnimation
 {
     if (!self.autoPullDownLoading) {
+        self.autoPullDownLoading = YES;
         [self pullDownLoadingAnimation];
         [self refreshAction];
-        self.autoPullDownLoading = YES;
     }
 }
 
