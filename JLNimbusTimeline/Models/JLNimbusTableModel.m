@@ -104,14 +104,16 @@
     else {
         self.isLoading = YES;
     }
+    
     if (more) {
         self.pageCounter++;
     }
     else {
         self.pageCounter = PAGE_START_INDEX;
     }
+    
     NSString* relativePath = [self relativePath];
-    if ([[self apiSharedClient] respondsToSelector:@selector(GET:parameters:refresh:success:failure:)]) {
+    if (relativePath && [[self apiSharedClient] respondsToSelector:@selector(GET:parameters:refresh:success:failure:)]) {
         [[self apiSharedClient] GET:relativePath parameters:[self generateParameters]  refresh:refresh
                                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                     self.isLoading = NO;
@@ -140,7 +142,12 @@
                                 }];
     }
     else {
-        NSLog(@"Error: can not find method (getPath:parameters:refresh:success:failure:)");
+        NSLog(@"Error: relativePath is nil OR not find method (GET:parameters:refresh:success:failure:)");
+        NSError *error = [[NSError alloc] init];
+        self.isLoading = NO;
+        if (block) {
+            block(nil, error);
+        }
     }
 }
 
