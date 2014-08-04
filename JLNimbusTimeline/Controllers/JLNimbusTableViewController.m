@@ -188,10 +188,9 @@
     [self didBeginLoadData];
     [self.model loadDataWithBlock:^(NSArray* indexPaths, NSError* error) {
         if (indexPaths) {
-            if (indexPaths.count) {
-                [self reloadWithIndexPaths:indexPaths];
-            }
-            else {
+            [self reloadWithIndexPaths:indexPaths];
+            
+            if (indexPaths.count == 0) {
                 [self showMessageForEmpty];
             }
             
