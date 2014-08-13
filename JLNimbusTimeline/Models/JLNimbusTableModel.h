@@ -13,8 +13,9 @@
 
 @property (nonatomic, assign) BOOL isLoading;
 @property (nonatomic, assign) BOOL hasMoreData;
-@property (nonatomic, assign) NSInteger pageCounter;
-@property (nonatomic, assign) NSInteger perpageCount;
+@property (nonatomic, assign) NSInteger pageStartIndex;
+@property (nonatomic, assign) NSInteger pageIndex;
+@property (nonatomic, assign) NSInteger pageSize;
 
 - (Class)objectClass;
 - (Class)cellClass;

@@ -25,8 +25,9 @@
 	self = [super initWithDelegate:delegate];
 	if (self)
 	{
-		self.pageCounter = PAGE_START_INDEX;
-        self.perpageCount = PERPAGE_COUNT;
+        self.pageStartIndex = PAGE_START_INDEX;
+		self.pageIndex = self.pageStartIndex;
+        self.pageSize = PERPAGE_COUNT;
 		self.hasMoreData = YES;
         
         if (delegate && [delegate isKindOfClass:[NICellFactory class]]) {
@@ -106,10 +107,10 @@
     }
     
     if (more) {
-        self.pageCounter++;
+        self.pageIndex++;
     }
     else {
-        self.pageCounter = PAGE_START_INDEX;
+        self.pageIndex = PAGE_START_INDEX;
     }
     
     NSString* relativePath = [self relativePath];
@@ -184,11 +185,11 @@
         NSDictionary* rootDictionary = (NSDictionary*)responseObject;
         NSArray* listDataArray = [self getListDataFromRootDictionary:rootDictionary];
         entities = [self entitiesParsedFromListData:listDataArray];
-        self.hasMoreData = (entities.count >= self.perpageCount) ? YES : NO;
+        self.hasMoreData = (entities.count >= self.pageSize) ? YES : NO;
     }
     else if ([responseObject isKindOfClass:[NSArray class]]) {
         entities = [self entitiesParsedFromListData:responseObject];
-        self.hasMoreData = (entities.count >= self.perpageCount) ? YES : NO;
+        self.hasMoreData = (entities.count >= self.pageSize) ? YES : NO;
     }
     else {
         self.hasMoreData = NO;
