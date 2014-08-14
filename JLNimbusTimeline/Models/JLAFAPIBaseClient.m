@@ -67,6 +67,10 @@
     }
     AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:success failure:failure];
     [self.operationQueue addOperation:operation];
+    
+#if DEBUG
+    NSLog(@"request url:\n%@", request.URL.absoluteString);
+#endif
 }
 
 @end
