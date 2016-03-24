@@ -26,25 +26,13 @@
     
     // AFNetworking
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
-//    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObjects:
-//                                                       @"application/json",
-//                                                       @"text/json",
-//                                                       @"text/javascript",
-//                                                       @"text/html",
-//                                                       @"text/plain", nil]];
 }
 
 - (void)appearanceChange
 {
     [[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
-    if (IOS_IS_AT_LEAST_7) {
-        // do change if u need
-        //[[UINavigationBar appearance] setBarTintColor:[UIColor lightGrayColor]];
-        //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    }
 }
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -54,7 +42,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UIViewController* c = [[SMPublicTimlineListC alloc] init];
     UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:c];
-    //navi.navigationBar.translucent = NO;
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     

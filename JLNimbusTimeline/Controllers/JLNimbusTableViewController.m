@@ -34,16 +34,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        
-    }
-    return self;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
         _cellFactory = [[NICellFactory alloc] init];
         _model = [[[self tableModelClass] alloc] initWithDelegate:_cellFactory];
         _actions = [[NITableViewActions alloc] initWithTarget:self];
